@@ -1,7 +1,7 @@
 import {html, define} from 'may-it-be/index.js';
 import {SenateProps, SenateActions} from './types';
 import {MayItBe as mib, BeDefinitiveVirtualProps as def } from 'may-it-be/types';
-import { BaseScaffoldGenerator,  Scaffold} from 'may-it-be/BaseScaffold.js';
+import { BaseScaffoldGenerator,  VisualHints} from 'may-it-be/BaseScaffold.js';
 
 const mode = process.argv[2] as '-js' | '-html';
 
@@ -17,9 +17,9 @@ const beDefinitiveProps: def<SenateProps, SenateActions> = {
     }
 };
 
-const scaffold: Scaffold<SenateProps, SenateActions> = {};
+const VisualHints: VisualHints<SenateProps, SenateActions> = {};
 
-const innerHTML = (new BaseScaffoldGenerator(beDefinitiveProps, scaffold)).html;
+const innerHTML = (new BaseScaffoldGenerator(beDefinitiveProps)).html;
 
 define({
     innerHTML,

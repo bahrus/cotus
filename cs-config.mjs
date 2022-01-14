@@ -11,8 +11,8 @@ const beDefinitiveProps = {
         }
     }
 };
-const scaffold = {};
-const innerHTML = (new BaseScaffoldGenerator(beDefinitiveProps, scaffold)).html;
+const VisualHints = {};
+const innerHTML = (new BaseScaffoldGenerator(beDefinitiveProps)).html;
 define({
     innerHTML,
     mode,
