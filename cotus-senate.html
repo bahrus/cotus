@@ -6,17 +6,48 @@
             <script id="be-definitive/be-definitive.js"></script>
             
         </template>
-        <form>
+        
+<template be-active>
+    <script id=be-noticed/be-noticed.js></script>
+</template>
+<form>
 
     <fieldset>
-        <legend>unclassified</legend>
+        <legend>Unclassified</legend>
+        <table>
+            
+<tr part="field-container field-container-noOfDemocrats" class="field-container field-container-noOfDemocrats"> 
+    <td>
+        <label part="label label-noOfDemocrats" class=label-noOfDemocrats for=noOfDemocrats>noOfDemocrats</label>
+    </td>
+    <td>
+        <input id=noOfDemocrats itemprop=noOfDemocrats type=text value=49 be-noticed='{"input":{"prop":"${propKey}","vft":"value"}}'>
+    </td>
+
+</tr>
+
+<tr part="field-container field-container-noOfRepublicans" class="field-container field-container-noOfRepublicans"> 
+    <td>
+        <label part="label label-noOfRepublicans" class=label-noOfRepublicans for=noOfRepublicans>noOfRepublicans</label>
+    </td>
+    <td>
+        <input id=noOfRepublicans itemprop=noOfRepublicans type=text value=49 be-noticed='{"input":{"prop":"${propKey}","vft":"value"}}'>
+    </td>
+
+</tr>
+
+<tr part="field-container field-container-noOfIndependents" class="field-container field-container-noOfIndependents"> 
+    <td>
+        <label part="label label-noOfIndependents" class=label-noOfIndependents for=noOfIndependents>noOfIndependents</label>
+    </td>
+    <td>
+        <input id=noOfIndependents itemprop=noOfIndependents type=text value=2 be-noticed='{"input":{"prop":"${propKey}","vft":"value"}}'>
+    </td>
+
+</tr>
+
+        </table>
         
-<label part="label label-noOfDemocrats" class=label-noOfDemocrats for=noOfDemocrats>noOfDemocrats</label>
-<input id=noOfDemocrats itemprop=noOfDemocrats type=text value=49 >
-<label part="label label-noOfRepublicans" class=label-noOfRepublicans for=noOfRepublicans>noOfRepublicans</label>
-<input id=noOfRepublicans itemprop=noOfRepublicans type=text value=49 >
-<label part="label label-noOfIndependents" class=label-noOfIndependents for=noOfIndependents>noOfIndependents</label>
-<input id=noOfIndependents itemprop=noOfIndependents type=text value=2 >
     </fieldset>
     
 </form>
