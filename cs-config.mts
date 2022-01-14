@@ -19,7 +19,7 @@ const beDefinitiveProps: def<SenateProps, SenateActions> = {
 
 const VisualHints: VisualHints<SenateProps, SenateActions> = {};
 
-const innerHTML = (new BaseScaffoldGenerator(beDefinitiveProps)).html;
+const innerHTML = BaseScaffoldGenerator.generateFrom(beDefinitiveProps).html;
 
 define({
     innerHTML,
@@ -28,6 +28,3 @@ define({
     encodeAndWrite: console.log,
 });
 
-// export class cotusSenateController extends HTMLElement{
-    
-// }

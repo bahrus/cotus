@@ -12,12 +12,10 @@ const beDefinitiveProps = {
     }
 };
 const VisualHints = {};
-const innerHTML = (new BaseScaffoldGenerator(beDefinitiveProps)).html;
+const innerHTML = BaseScaffoldGenerator.generateFrom(beDefinitiveProps).html;
 define({
     innerHTML,
     mode,
     beDefinitiveProps,
     encodeAndWrite: console.log,
 });
-// export class cotusSenateController extends HTMLElement{
-// }
