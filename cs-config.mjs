@@ -8,10 +8,11 @@ const beDefinitiveProps = {
             noOfDemocrats: 49,
             noOfRepublicans: 49,
             noOfIndependents: 2,
+            inSession: false,
         }
     }
 };
-const VisualHints = {};
+//const VisualHints: VisualHints<SenateProps, SenateActions> = {};
 const innerHTML = BaseScaffoldGenerator.generateFrom(beDefinitiveProps).html;
 define({
     innerHTML,

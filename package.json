@@ -13,7 +13,7 @@
     "build-cs-html": "cs-config.mjs"
   },
   "dependencies": {
-    "may-it-be": "0.0.35"
+    "may-it-be": "0.0.39"
   },
   "devDependencies": {
     "@custom-elements-manifest/analyzer": "0.5.7",

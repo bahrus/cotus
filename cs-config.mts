@@ -12,12 +12,12 @@ const beDefinitiveProps: def<SenateProps, SenateActions> = {
             noOfDemocrats: 49,
             noOfRepublicans: 49,
             noOfIndependents: 2,
-
+            inSession: false,
         }
     }
 };
 
-const VisualHints: VisualHints<SenateProps, SenateActions> = {};
+//const VisualHints: VisualHints<SenateProps, SenateActions> = {};
 
 const innerHTML = BaseScaffoldGenerator.generateFrom(beDefinitiveProps).html;
 

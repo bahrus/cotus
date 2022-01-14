@@ -1,5 +1,5 @@
 
-<cotus-senate t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-senate","propDefaults":{"noOfDemocrats":49,"noOfRepublicans":49,"noOfIndependents":2}}}'>
+<cotus-senate t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-senate","propDefaults":{"noOfDemocrats":49,"noOfRepublicans":49,"noOfIndependents":2,"inSession":false}}}'>
     <!---->
     <template shadowroot="open">
         <template be-active>
@@ -7,9 +7,6 @@
             
         </template>
         
-<template be-active>
-    <script id=be-noticed/be-noticed.js></script>
-</template>
 <form>
 
     <fieldset>
@@ -18,30 +15,40 @@
             
 <tr part="field-container field-container-noOfDemocrats" class="field-container field-container-noOfDemocrats"> 
     <td>
-        <label part="label label-noOfDemocrats" class=label-noOfDemocrats for=noOfDemocrats>noOfDemocrats</label>
+        <label part="label label-noOfDemocrats" class=label-noOfDemocrats for=noOfDemocrats>noOfDemocrats:</label>
     </td>
     <td>
-        <input id=noOfDemocrats itemprop=noOfDemocrats type=text value=49 be-noticed='{"input":{"prop":"${propKey}","vft":"value"}}'>
+        <input id=noOfDemocrats itemprop=noOfDemocrats type=number value=49 be-noticed='{"input":{"prop":"noOfDemocrats","vft":"value","parseValAs":"int"}}'>
     </td>
 
 </tr>
 
 <tr part="field-container field-container-noOfRepublicans" class="field-container field-container-noOfRepublicans"> 
     <td>
-        <label part="label label-noOfRepublicans" class=label-noOfRepublicans for=noOfRepublicans>noOfRepublicans</label>
+        <label part="label label-noOfRepublicans" class=label-noOfRepublicans for=noOfRepublicans>noOfRepublicans:</label>
     </td>
     <td>
-        <input id=noOfRepublicans itemprop=noOfRepublicans type=text value=49 be-noticed='{"input":{"prop":"${propKey}","vft":"value"}}'>
+        <input id=noOfRepublicans itemprop=noOfRepublicans type=number value=49 be-noticed='{"input":{"prop":"noOfRepublicans","vft":"value","parseValAs":"int"}}'>
     </td>
 
 </tr>
 
 <tr part="field-container field-container-noOfIndependents" class="field-container field-container-noOfIndependents"> 
     <td>
-        <label part="label label-noOfIndependents" class=label-noOfIndependents for=noOfIndependents>noOfIndependents</label>
+        <label part="label label-noOfIndependents" class=label-noOfIndependents for=noOfIndependents>noOfIndependents:</label>
     </td>
     <td>
-        <input id=noOfIndependents itemprop=noOfIndependents type=text value=2 be-noticed='{"input":{"prop":"${propKey}","vft":"value"}}'>
+        <input id=noOfIndependents itemprop=noOfIndependents type=number value=2 be-noticed='{"input":{"prop":"noOfIndependents","vft":"value","parseValAs":"int"}}'>
+    </td>
+
+</tr>
+
+<tr part="field-container field-container-inSession" class="field-container field-container-inSession"> 
+    <td>
+        <label part="label label-inSession" class=label-inSession for=inSession>inSession:</label>
+    </td>
+    <td>
+        <input id=inSession itemprop=inSession type=checkbox value=false be-noticed='{"input":{"prop":"inSession","vft":"checked","parseValAs":"string"}}'>
     </td>
 
 </tr>
@@ -51,6 +58,11 @@
     </fieldset>
     
 </form>
+<template be-active>
+    <script id=be-noticed/be-noticed.js></script>
+</template>
+<be-hive></be-hive>
+
     </template>
 </cotus-senate>
 <script type=module>
