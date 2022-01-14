@@ -8,7 +8,7 @@
 		"watch": true
 	},
 	"files":[
-		"ceb-config.mts"
+		"cs-config.mts"
 	],
 	"exclude":[
 		"node_modules"
