@@ -11,13 +11,7 @@ const beDefinitiveProps = {
         }
     }
 };
-const scaffold = {
-    propPresentationMap: {
-        noOfDemocrats: {},
-        noOfRepublicans: {},
-        noOfIndependents: {},
-    }
-};
+const scaffold = {};
 const innerHTML = (new BaseScaffoldGenerator(beDefinitiveProps, scaffold)).html;
 define({
     innerHTML,

@@ -17,13 +17,7 @@ const beDefinitiveProps: def<SenateProps, SenateActions> = {
     }
 };
 
-const scaffold: Scaffold<SenateProps, SenateActions> = {
-    propPresentationMap:{
-        noOfDemocrats: {},
-        noOfRepublicans: {},
-        noOfIndependents: {},
-    }
-}
+const scaffold: Scaffold<SenateProps, SenateActions> = {};
 
 const innerHTML = (new BaseScaffoldGenerator(beDefinitiveProps, scaffold)).html;
 
