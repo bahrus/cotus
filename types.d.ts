@@ -1,6 +1,6 @@
 
 export interface LegislativeBranchProps{
-    senate: Senate;
+    senate: SenateProps;
     house: House;
 }
 
@@ -9,13 +9,16 @@ export interface LegislativeBranchActions{
     overrideVeto: (self: this) => void;
 }
 
-export interface Senate{
+export interface SenateProps{
     noOfRepublicans: number;
     noOfDemocrats: number;
     noOfIndependents: number;
     majorityLeader: string;
     minorityLeader: string;
     inSession: boolean;
+}
+
+export interface SenateActions extends LegislativeBranchActions{
 }
 
 export interface House{

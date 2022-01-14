@@ -9,17 +9,18 @@
     "build-cs-html": "node cs-config.mjs -html > cotus-senate.html",
     "watch": "npm-watch"
   },
-  "watch":{
+  "watch": {
     "build-cs-html": "cs-config.mjs"
   },
-  "dependencies":{
-    "may-it-be": "0.0.22"
+  "dependencies": {
+    "may-it-be": "0.0.23"
   },
   "devDependencies": {
     "@custom-elements-manifest/analyzer": "0.5.7",
     "@skypack/package-check": "0.2.2",
     "be-importing": "0.0.1",
     "npm-watch": "0.11.0",
+    "typescript": "^4.6.0-dev.20220114",
     "xtal-test": "0.0.54"
   },
   "repository": {
