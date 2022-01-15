@@ -14,10 +14,12 @@ const beDefinitiveProps: def<CongressProps, CongressActions> = {
 const visualHints: VisualHints<CongressProps, CongressActions> = {
     propPresentationMap: {
         house: {
+            name: 'House of Representatives',
             tagName: 'cotus-house',
             ssrPath: 'cotus/cotus-house.html'
         },
         senate: {
+            name: 'Senate',
             tagName: 'cotus-senate',
             ssrPath: 'cotus/cotus-senate.html'
         }

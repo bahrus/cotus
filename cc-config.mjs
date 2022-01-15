@@ -9,10 +9,12 @@ const beDefinitiveProps = {
 const visualHints = {
     propPresentationMap: {
         house: {
+            name: 'House of Representatives',
             tagName: 'cotus-house',
             ssrPath: 'cotus/cotus-house.html'
         },
         senate: {
+            name: 'Senate',
             tagName: 'cotus-senate',
             ssrPath: 'cotus/cotus-senate.html'
         }
