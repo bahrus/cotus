@@ -16,7 +16,10 @@ const visualHints: VisualHints<CongressProps, CongressActions> = {
         house: {
             name: 'House of Representatives',
             tagName: 'cotus-house',
-            ssrPath: 'cotus/cotus-house.html'
+            ssrPath: 'cotus/cotus-house.html',
+            style:{
+                minHeight: '200px'            
+            }
         },
         senate: {
             name: 'Senate',
