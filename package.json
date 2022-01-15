@@ -11,6 +11,9 @@
     "build-cc-html": "node cc-config.mjs -html > cotus-congress.html",
     "watch": "npm-watch"
   },
+  "files":[
+    "*.*"
+  ],
   "watch": {
     "build-cs-html": "cs-config.mjs",
     "build-ch-html": "ch-config.mjs",
