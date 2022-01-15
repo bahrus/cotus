@@ -1,5 +1,5 @@
 
-<cotus-congress t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-congress"}}'>
+<cotus-congress t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-congress","propDefaults":{"inSession":false}}}'>
     <!---->
     <template shadowroot="open">
         <template be-active>
@@ -37,6 +37,24 @@
         
         <cotus-senate  style="min-height: 200px;display: flex"  id=senate  be-importing=cotus/cotus-senate.html itemprop=senate></cotus-senate>
 
+    </td>
+</tr>
+
+        </table>
+        
+    </fieldset>
+    
+    <fieldset>
+        <legend>Status</legend>
+        <table>
+            
+<tr part="field-container field-container-inSession" class="field-container field-container-inSession"> 
+    <td>
+        <label part="label label-inSession" class=label-inSession for=inSession>inSession:</label>
+    </td>
+    <td>
+        
+            <input  id=inSession itemprop=inSession type=checkbox value=false be-noticed='{"input":{"prop":"inSession","vft":"checked","parseValAs":"string"}}'>
     </td>
 </tr>
 

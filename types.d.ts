@@ -1,7 +1,11 @@
 
-export interface CongressProps{
+export interface CongressProps extends Status{
     senate: SenateProps;
     house: HouseProps;
+}
+
+export interface Status{
+    inSession: boolean;
 }
 
 export interface LegislativeBranchActions{
@@ -18,19 +22,18 @@ export interface PartyAffiliation{
     noOfIndependents: number;
 }
 
-export interface SenateProps extends PartyAffiliation{
+export interface SenateProps extends PartyAffiliation, Status{
     majorityLeader: string;
     minorityLeader: string;
-    inSession: boolean;
+    inSesson: boolean;
 }
 
 export interface SenateActions extends LegislativeBranchActions{
 }
 
-export interface HouseProps extends PartyAffiliation{
+export interface HouseProps extends PartyAffiliation, Status{
     houseSpeaker: string;
     majorityWhip: string;
-    inSession: boolean;
 }
 
 export interface HouseActions extends LegislativeBranchActions{

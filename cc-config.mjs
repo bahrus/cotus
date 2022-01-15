@@ -4,6 +4,9 @@ const mode = process.argv[2];
 const beDefinitiveProps = {
     config: {
         tagName: 'cotus-congress',
+        propDefaults: {
+            inSession: false,
+        }
     },
 };
 const visualHints = {
@@ -29,6 +32,7 @@ const visualHints = {
     },
     fieldSets: {
         'Chambers': ['house', 'senate'],
+        'Status': ['inSession'],
     }
 };
 const innerHTML = BaseScaffoldGenerator.generateFrom(beDefinitiveProps, visualHints).html;

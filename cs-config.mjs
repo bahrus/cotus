@@ -15,6 +15,7 @@ const beDefinitiveProps = {
 const visualHints = {
     fieldSets: {
         'Party Breakdown': ['noOfDemocrats', 'noOfRepublicans', 'noOfIndependents'],
+        'Status': ['inSession'],
     }
 };
 const innerHTML = BaseScaffoldGenerator.generateFrom(beDefinitiveProps, visualHints).html;

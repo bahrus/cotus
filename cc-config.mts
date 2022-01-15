@@ -8,6 +8,9 @@ const mode = process.argv[2] as '-js' | '-html';
 const beDefinitiveProps: def<CongressProps, CongressActions> = {
     config: {
         tagName: 'cotus-congress',
+        propDefaults:{
+            inSession: false,
+        }
     },
 };
 
@@ -34,6 +37,7 @@ const visualHints: VisualHints<CongressProps, CongressActions> = {
     },
     fieldSets: {
         'Chambers': ['house', 'senate'],
+        'Status': ['inSession'],
     }
 };
 

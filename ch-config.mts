@@ -20,6 +20,7 @@ const beDefinitiveProps: def<HouseProps, HouseActions> = {
 const visualHints: VisualHints<HouseProps, HouseActions> = {
     fieldSets: {
         'Party Breakdown': ['noOfDemocrats', 'noOfRepublicans', 'noOfIndependents'],
+        'Status': ['inSession'],
     }
 };
 
