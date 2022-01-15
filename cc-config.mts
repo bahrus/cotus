@@ -21,6 +21,9 @@ const visualHints: VisualHints<CongressProps, CongressActions> = {
             tagName: 'cotus-senate',
             ssrPath: 'cotus/cotus-senate.html'
         }
+    },
+    fieldSets: {
+        'Chambers': ['house', 'senate'],
     }
 };
 

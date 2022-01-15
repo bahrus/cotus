@@ -16,6 +16,9 @@ const visualHints = {
             tagName: 'cotus-senate',
             ssrPath: 'cotus/cotus-senate.html'
         }
+    },
+    fieldSets: {
+        'Chambers': ['house', 'senate'],
     }
 };
 const innerHTML = BaseScaffoldGenerator.generateFrom(beDefinitiveProps, visualHints).html;
