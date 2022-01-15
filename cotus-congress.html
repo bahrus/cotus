@@ -15,16 +15,14 @@
             
 <tr part="field-container field-container-house" class="field-container field-container-house">
     <td colspan="2">
-        <cotus-house itemprop=house></cotus-house>
+        <cotus-house be-importing=cotus/cotus-house.html itemprop=house></cotus-house>
     </td>
 </tr>
-        
 <tr part="field-container field-container-senate" class="field-container field-container-senate">
     <td colspan="2">
-        <cotus-senate itemprop=senate></cotus-senate>
+        <cotus-senate be-importing=cotus/cotus-senate.html itemprop=senate></cotus-senate>
     </td>
 </tr>
-        
         </table>
         
     </fieldset>
@@ -32,6 +30,7 @@
 </form>
 <template be-active>
     <script id=be-noticed/be-noticed.js></script>
+    <script id=be-importing/be-importing.js></script>
 </template>
 <be-hive></be-hive>
 

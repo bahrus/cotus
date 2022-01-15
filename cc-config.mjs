@@ -4,15 +4,17 @@ const mode = process.argv[2];
 const beDefinitiveProps = {
     config: {
         tagName: 'cotus-congress',
-    }
+    },
 };
 const visualHints = {
     propPresentationMap: {
         house: {
             tagName: 'cotus-house',
+            ssrPath: 'cotus/cotus-house.html'
         },
         senate: {
             tagName: 'cotus-senate',
+            ssrPath: 'cotus/cotus-senate.html'
         }
     }
 };
@@ -22,4 +24,5 @@ define({
     mode,
     beDefinitiveProps,
     encodeAndWrite: console.log,
+    dependencies: [],
 });
