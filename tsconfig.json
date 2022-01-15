@@ -8,7 +8,9 @@
 		"watch": true
 	},
 	"files":[
-		"cs-config.mts"
+		"cs-config.mts",
+		"ch-config.mts",
+		"cc-config.mts",
 	],
 	"exclude":[
 		"node_modules"

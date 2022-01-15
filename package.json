@@ -7,13 +7,17 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "node node_modules/xtal-test/serve.js",
     "build-cs-html": "node cs-config.mjs -html > cotus-senate.html",
+    "build-ch-html": "node ch-config.mjs -html > cotus-house.html",
+    "build-cc-html": "node cc-config.mjs -html > cotus-congress.html",
     "watch": "npm-watch"
   },
   "watch": {
-    "build-cs-html": "cs-config.mjs"
+    "build-cs-html": "cs-config.mjs",
+    "build-ch-html": "ch-config.mjs",
+    "build-cc-html": "cc-config.mjs"
   },
   "dependencies": {
-    "may-it-be": "0.0.41"
+    "may-it-be": "0.0.42"
   },
   "devDependencies": {
     "@custom-elements-manifest/analyzer": "0.5.7",

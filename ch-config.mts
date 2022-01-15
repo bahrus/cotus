@@ -1,23 +1,23 @@
 import {html, define} from 'may-it-be/index.js';
-import {SenateProps, SenateActions} from './types';
+import {HouseProps, HouseActions} from './types';
 import {MayItBe as mib, BeDefinitiveVirtualProps as def } from 'may-it-be/types';
 import { BaseScaffoldGenerator,  VisualHints} from 'may-it-be/BaseScaffold.js';
 
 const mode = process.argv[2] as '-js' | '-html';
 
-const beDefinitiveProps: def<SenateProps, SenateActions> = {
+const beDefinitiveProps: def<HouseProps, HouseActions> = {
     config: {
-        tagName: 'cotus-senate',
+        tagName: 'cotus-house',
         propDefaults:{
-            noOfDemocrats: 49,
-            noOfRepublicans: 49,
-            noOfIndependents: 2,
+            noOfDemocrats: 217,
+            noOfRepublicans: 217,
+            noOfIndependents: 1,
             inSession: false,
         }
     }
 };
 
-const visualHints: VisualHints<SenateProps, SenateActions> = {
+const visualHints: VisualHints<HouseProps, HouseActions> = {
     fieldSets: {
         'Party Breakdown': ['noOfDemocrats', 'noOfRepublicans', 'noOfIndependents'],
     }
@@ -31,4 +31,3 @@ define({
     beDefinitiveProps,
     encodeAndWrite: console.log,
 });
-

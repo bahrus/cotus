@@ -1,5 +1,5 @@
 
-<cotus-senate t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-senate","propDefaults":{"noOfDemocrats":49,"noOfRepublicans":49,"noOfIndependents":2,"inSession":false}}}'>
+<cotus-house t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-house","propDefaults":{"noOfDemocrats":217,"noOfRepublicans":217,"noOfIndependents":1,"inSession":false}}}'>
     <!---->
     <template shadowroot="open">
         <template be-active>
@@ -18,7 +18,7 @@
         <label part="label label-noOfDemocrats" class=label-noOfDemocrats for=noOfDemocrats>noOfDemocrats:</label>
     </td>
     <td>
-        <input id=noOfDemocrats itemprop=noOfDemocrats type=number value=49 be-noticed='{"input":{"prop":"noOfDemocrats","vft":"value","parseValAs":"int"}}'>
+        <input id=noOfDemocrats itemprop=noOfDemocrats type=number value=217 be-noticed='{"input":{"prop":"noOfDemocrats","vft":"value","parseValAs":"int"}}'>
     </td>
 
 </tr>
@@ -28,7 +28,7 @@
         <label part="label label-noOfRepublicans" class=label-noOfRepublicans for=noOfRepublicans>noOfRepublicans:</label>
     </td>
     <td>
-        <input id=noOfRepublicans itemprop=noOfRepublicans type=number value=49 be-noticed='{"input":{"prop":"noOfRepublicans","vft":"value","parseValAs":"int"}}'>
+        <input id=noOfRepublicans itemprop=noOfRepublicans type=number value=217 be-noticed='{"input":{"prop":"noOfRepublicans","vft":"value","parseValAs":"int"}}'>
     </td>
 
 </tr>
@@ -38,7 +38,7 @@
         <label part="label label-noOfIndependents" class=label-noOfIndependents for=noOfIndependents>noOfIndependents:</label>
     </td>
     <td>
-        <input id=noOfIndependents itemprop=noOfIndependents type=number value=2 be-noticed='{"input":{"prop":"noOfIndependents","vft":"value","parseValAs":"int"}}'>
+        <input id=noOfIndependents itemprop=noOfIndependents type=number value=1 be-noticed='{"input":{"prop":"noOfIndependents","vft":"value","parseValAs":"int"}}'>
     </td>
 
 </tr>
@@ -72,7 +72,7 @@
 <be-hive></be-hive>
 
     </template>
-</cotus-senate>
+</cotus-house>
 <script type=module>
     if(customElements.get('be-active') === undefined){
         import('be-active/be-active.js').catch(err => {

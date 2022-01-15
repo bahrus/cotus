@@ -3,11 +3,11 @@ import { BaseScaffoldGenerator } from 'may-it-be/BaseScaffold.js';
 const mode = process.argv[2];
 const beDefinitiveProps = {
     config: {
-        tagName: 'cotus-senate',
+        tagName: 'cotus-house',
         propDefaults: {
-            noOfDemocrats: 49,
-            noOfRepublicans: 49,
-            noOfIndependents: 2,
+            noOfDemocrats: 217,
+            noOfRepublicans: 217,
+            noOfIndependents: 1,
             inSession: false,
         }
     }

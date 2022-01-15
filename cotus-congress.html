@@ -1,0 +1,35 @@
+
+<cotus-congress t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-congress"}}'>
+    <!---->
+    <template shadowroot="open">
+        <template be-active>
+            <script id="be-definitive/be-definitive.js"></script>
+            
+        </template>
+        
+<form>
+
+    <fieldset>
+        <legend>Unclassified</legend>
+        <table>
+            
+        </table>
+        
+    </fieldset>
+    
+</form>
+<template be-active>
+    <script id=be-noticed/be-noticed.js></script>
+</template>
+<be-hive></be-hive>
+
+    </template>
+</cotus-congress>
+<script type=module>
+    if(customElements.get('be-active') === undefined){
+        import('be-active/be-active.js').catch(err => {
+            import('https://esm.run/be-active/be-active.js');
+        });
+    }
+</script>
+

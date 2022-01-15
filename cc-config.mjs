@@ -3,18 +3,17 @@ import { BaseScaffoldGenerator } from 'may-it-be/BaseScaffold.js';
 const mode = process.argv[2];
 const beDefinitiveProps = {
     config: {
-        tagName: 'cotus-senate',
-        propDefaults: {
-            noOfDemocrats: 49,
-            noOfRepublicans: 49,
-            noOfIndependents: 2,
-            inSession: false,
-        }
+        tagName: 'cotus-congress',
     }
 };
 const visualHints = {
-    fieldSets: {
-        'Party Breakdown': ['noOfDemocrats', 'noOfRepublicans', 'noOfIndependents'],
+    propPresentationMap: {
+        house: {
+            tagName: 'cotus-house',
+        },
+        senate: {
+            tagName: 'cotus-senate',
+        }
     }
 };
 const innerHTML = BaseScaffoldGenerator.generateFrom(beDefinitiveProps, visualHints).html;

@@ -1,25 +1,24 @@
 import {html, define} from 'may-it-be/index.js';
-import {SenateProps, SenateActions} from './types';
+import {CongressProps, CongressActions} from './types';
 import {MayItBe as mib, BeDefinitiveVirtualProps as def } from 'may-it-be/types';
 import { BaseScaffoldGenerator,  VisualHints} from 'may-it-be/BaseScaffold.js';
 
 const mode = process.argv[2] as '-js' | '-html';
 
-const beDefinitiveProps: def<SenateProps, SenateActions> = {
+const beDefinitiveProps: def<CongressProps, CongressActions> = {
     config: {
-        tagName: 'cotus-senate',
-        propDefaults:{
-            noOfDemocrats: 49,
-            noOfRepublicans: 49,
-            noOfIndependents: 2,
-            inSession: false,
-        }
+        tagName: 'cotus-congress',
     }
 };
 
-const visualHints: VisualHints<SenateProps, SenateActions> = {
-    fieldSets: {
-        'Party Breakdown': ['noOfDemocrats', 'noOfRepublicans', 'noOfIndependents'],
+const visualHints: VisualHints<CongressProps, CongressActions> = {
+    propPresentationMap: {
+        house: {
+            tagName: 'cotus-house',
+        },
+        senate: {
+            tagName: 'cotus-senate',
+        }
     }
 };
 
