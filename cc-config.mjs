@@ -13,13 +13,18 @@ const visualHints = {
             tagName: 'cotus-house',
             ssrPath: 'cotus/cotus-house.html',
             style: {
-                minHeight: '200px'
+                minHeight: '200px',
+                display: 'flex',
             }
         },
         senate: {
             name: 'Senate',
             tagName: 'cotus-senate',
-            ssrPath: 'cotus/cotus-senate.html'
+            ssrPath: 'cotus/cotus-senate.html',
+            style: {
+                minHeight: '200px',
+                display: 'flex',
+            }
         }
     },
     fieldSets: {
