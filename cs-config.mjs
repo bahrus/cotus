@@ -12,8 +12,12 @@ const beDefinitiveProps = {
         }
     }
 };
-//const VisualHints: VisualHints<SenateProps, SenateActions> = {};
-const innerHTML = BaseScaffoldGenerator.generateFrom(beDefinitiveProps).html;
+const visualHints = {
+    fieldSets: {
+        'Party Affiliation': ['noOfDemocrats', 'noOfRepublicans', 'noOfIndependents'],
+    }
+};
+const innerHTML = BaseScaffoldGenerator.generateFrom(beDefinitiveProps, visualHints).html;
 define({
     innerHTML,
     mode,
