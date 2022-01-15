@@ -18,9 +18,27 @@
         <legend>Chambers</legend>
         <table>
             
+<tr part="field-container field-container-house" class="field-container field-container-house"> 
+    <td>
+        <label part="label label-house" class=label-house for=house>House of Representatives:</label>
+    </td>
+    <td>
+        
         <cotus-house  style="min-height: 200px;display: flex"  id=house  be-importing=cotus/cotus-house.html itemprop=house></cotus-house>
 
+    </td>
+</tr>
+
+<tr part="field-container field-container-senate" class="field-container field-container-senate"> 
+    <td>
+        <label part="label label-senate" class=label-senate for=senate>Senate:</label>
+    </td>
+    <td>
+        
         <cotus-senate  style="min-height: 200px;display: flex"  id=senate  be-importing=cotus/cotus-senate.html itemprop=senate></cotus-senate>
+
+    </td>
+</tr>
 
         </table>
         
