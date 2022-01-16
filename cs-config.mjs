@@ -9,6 +9,15 @@ const beDefinitiveProps = {
             noOfRepublicans: 49,
             noOfIndependents: 2,
             inSession: false,
+        },
+        propInfo: {
+            inSession: {
+                notify: {
+                    reflect: {
+                        asAttr: true,
+                    }
+                }
+            }
         }
     }
 };

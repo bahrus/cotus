@@ -11,6 +11,7 @@
 		"cs-config.mts",
 		"ch-config.mts",
 		"cc-config.mts",
+		"cotus-congress.cs.ts"
 	],
 	"exclude":[
 		"node_modules"

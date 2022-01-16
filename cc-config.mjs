@@ -8,6 +8,7 @@ const beDefinitiveProps = {
             inSession: false,
         }
     },
+    //scriptPath: './cotus-congress.cs.js',
 };
 const visualHints = {
     propPresentationMap: {
@@ -28,12 +29,22 @@ const visualHints = {
                 minHeight: '200px',
                 display: 'flex',
             }
+        },
+        inSession: {
+            name: 'In Session',
+            mayItBe: {
+                beConsensual: {
+                    elementSelector: '[is-importing]',
+                    onStateSelector: '[in-session]',
+                    offStateSelector: ':not([in-session])',
+                }
+            }
         }
     },
     fieldSets: {
         'Chambers': ['house', 'senate'],
         'Status': ['inSession'],
-    }
+    },
 };
 const innerHTML = BaseScaffoldGenerator.generateFrom(beDefinitiveProps, visualHints).html;
 define({
@@ -41,5 +52,5 @@ define({
     mode,
     beDefinitiveProps,
     encodeAndWrite: console.log,
-    dependencies: [],
+    dependencies: ['be-consensual@0.0.2/be-consensual.js'],
 });

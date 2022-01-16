@@ -9,11 +9,12 @@ export interface Status{
 }
 
 export interface LegislativeBranchActions{
-    passBill: (self: this) => void;
-    overrideVeto: (self: this) => void;
+    // passBill: (self: this) => void;
+    // overrideVeto: (self: this) => void;
 }
 
 export interface CongressActions extends LegislativeBranchActions{
+    onInSession(self: this): void;
 }
 
 export interface PartyAffiliation{

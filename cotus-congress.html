@@ -4,7 +4,7 @@
     <template shadowroot="open">
         <template be-active>
             <script id="be-definitive/be-definitive.js"></script>
-            
+            <script id="be-consensual@0.0.2/be-consensual.js"></script>
         </template>
         
 <style>
@@ -24,7 +24,7 @@
     </td>
     <td>
         
-        <cotus-house  style="min-height: 200px;display: flex"  id=house  be-importing=./cotus-house.html itemprop=house></cotus-house>
+        <cotus-house  style="min-height: 200px;display: flex"   id=house  be-importing=./cotus-house.html itemprop=house></cotus-house>
 
     </td>
 </tr>
@@ -35,7 +35,7 @@
     </td>
     <td>
         
-        <cotus-senate  style="min-height: 200px;display: flex"  id=senate  be-importing=./cotus-senate.html itemprop=senate></cotus-senate>
+        <cotus-senate  style="min-height: 200px;display: flex"   id=senate  be-importing=./cotus-senate.html itemprop=senate></cotus-senate>
 
     </td>
 </tr>
@@ -50,11 +50,11 @@
             
 <tr part="field-container field-container-inSession" class="field-container field-container-inSession"> 
     <td>
-        <label part="label label-inSession" class=label-inSession for=inSession>inSession:</label>
+        <label part="label label-inSession" class=label-inSession for=inSession>In Session:</label>
     </td>
     <td>
         
-            <input  id=inSession itemprop=inSession type=checkbox value=false be-noticed='{"input":{"prop":"inSession","vft":"checked","parseValAs":"string"}}'>
+            <input  id=inSession itemprop=inSession type=checkbox value=false be-noticed='{"input":{"prop":"inSession","vft":"checked","parseValAs":"string"}}'  be-consensual='{"elementSelector":"[is-importing]","onStateSelector":"[in-session]","offStateSelector":":not([in-session])"}'>
     </td>
 </tr>
 
@@ -71,6 +71,7 @@
 
     </template>
 </cotus-congress>
+
 <script type=module>
     if(customElements.get('be-active') === undefined){
         import('be-active/be-active.js').catch(err => {
