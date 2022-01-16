@@ -13,6 +13,15 @@ const beDefinitiveProps: def<HouseProps, HouseActions> = {
             noOfRepublicans: 217,
             noOfIndependents: 1,
             inSession: false,
+        },
+        propInfo:{
+            inSession:{
+                notify:{
+                    reflect:{
+                        asAttr: true,
+                    }
+                }
+            }
         }
     }
 };
