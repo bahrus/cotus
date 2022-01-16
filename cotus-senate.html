@@ -24,7 +24,7 @@
     </td>
     <td>
         
-            <input  id=noOfDemocrats itemprop=noOfDemocrats type=number value=49 be-noticed='{"input":{"prop":"noOfDemocrats","vft":"value","parseValAs":"int"}}' >
+            <input  id=noOfDemocrats itemprop=noOfDemocrats type=number value=49 be-noticed='{"input":{"prop":"noOfDemocrats","vft":"value","parseValAs":"int"}}'be-observant='{"value":".noOfDemocrats"}' >
     </td>
 </tr>
 
@@ -34,7 +34,7 @@
     </td>
     <td>
         
-            <input  id=noOfRepublicans itemprop=noOfRepublicans type=number value=49 be-noticed='{"input":{"prop":"noOfRepublicans","vft":"value","parseValAs":"int"}}' >
+            <input  id=noOfRepublicans itemprop=noOfRepublicans type=number value=49 be-noticed='{"input":{"prop":"noOfRepublicans","vft":"value","parseValAs":"int"}}'be-observant='{"value":".noOfRepublicans"}' >
     </td>
 </tr>
 
@@ -44,7 +44,7 @@
     </td>
     <td>
         
-            <input  id=noOfIndependents itemprop=noOfIndependents type=number value=2 be-noticed='{"input":{"prop":"noOfIndependents","vft":"value","parseValAs":"int"}}' >
+            <input  id=noOfIndependents itemprop=noOfIndependents type=number value=2 be-noticed='{"input":{"prop":"noOfIndependents","vft":"value","parseValAs":"int"}}'be-observant='{"value":".noOfIndependents"}' >
     </td>
 </tr>
 
@@ -62,7 +62,7 @@
     </td>
     <td>
         
-            <input  id=inSession itemprop=inSession type=checkbox value=false be-noticed='{"input":{"prop":"inSession","vft":"checked","parseValAs":"string"}}' >
+            <input  id=inSession itemprop=inSession type=checkbox value=false be-noticed='{"input":{"prop":"inSession","vft":"checked","parseValAs":"string"}}'be-observant='{"checked":".inSession"}' >
     </td>
 </tr>
 
@@ -74,6 +74,7 @@
 <template be-active>
     <script id=be-noticed/be-noticed.js></script>
     <script id=be-importing/be-importing.js></script>
+    <script id=be-observant/be-observant.js></script>
 </template>
 <be-hive></be-hive>
 

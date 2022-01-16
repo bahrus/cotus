@@ -37,6 +37,7 @@ const visualHints = {
                     elementSelector: '[is-importing][is-definitive]',
                     onStateSelector: '[in-session]',
                     offStateSelector: ':not([in-session])',
+                    prop: 'inSession',
                 }
             }
         }
@@ -52,5 +53,5 @@ define({
     mode,
     beDefinitiveProps,
     encodeAndWrite: console.log,
-    dependencies: ['be-consensual@0.0.2/be-consensual.js'],
+    dependencies: ['be-consensual@0.0.3/be-consensual.js'],
 });
