@@ -34,7 +34,7 @@ const visualHints = {
             name: 'In Session',
             mayItBe: {
                 beConsensual: {
-                    elementSelector: '[is-importing]',
+                    elementSelector: '[is-importing][is-definitive]',
                     onStateSelector: '[in-session]',
                     offStateSelector: ':not([in-session])',
                 }
