@@ -11,6 +11,7 @@
     "build-congress.html": "node define/congress.mjs -html > cotus-congress.html",
     "build-potus.html": "node define/president.mjs -html > cotus-potus.html",
     "build-executive.html": "node define/executive.mjs -html > cotus-executive.html",
+    "build-union.html": "node define/union.mjs -html > cotus-union.html",
     "watch": "npm-watch"
   },
   "files": [
@@ -21,7 +22,8 @@
     "build-house.html": "define/house.mjs",
     "build-congress.html": "define/congress.mjs",
     "build-potus.html": "define/president.mjs",
-    "build-executive.html": "define/executive.mjs"
+    "build-executive.html": "define/executive.mjs",
+    "build-union.html": "define/union.mjs"
   },
   "dependencies": {
     "may-it-be": "0.0.77"

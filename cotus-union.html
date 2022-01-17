@@ -1,0 +1,70 @@
+
+<cotus-union t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-union"}}'>
+    <!---->
+    <template shadowroot="open">
+        <template be-active>
+            <script data-version=latest id="be-importing/be-importing.js"></script>
+            <script data-version=latest id="be-definitive/be-definitive.js" data-when=be-importing></script>
+            
+            
+        </template>
+        
+
+<style>
+    :host{
+        display: block;
+    }
+</style>
+
+        
+<form>
+
+    <fieldset>
+        <legend>Unclassified</legend>
+        <table>
+            
+<tr part="field-container field-container-congress" class="field-container field-container-congress"> 
+    
+        <td colspan=2>
+            <div><label part="label label-congress" class=label-congress for=congress>Congress:</label></div>
+            
+        <cotus-congress  style="min-height: 400px;display: flex"   id=congress  be-importing=./cotus-congress.html itemprop=congress></cotus-congress>
+
+        </td>
+    
+</tr>
+
+<tr part="field-container field-container-executive" class="field-container field-container-executive"> 
+    
+        <td colspan=2>
+            <div><label part="label label-executive" class=label-executive for=executive>Executive:</label></div>
+            
+        <cotus-executive  style="min-height: 400px;display: flex"   id=executive  be-importing=./cotus-executive.html itemprop=executive></cotus-executive>
+
+        </td>
+    
+</tr>
+
+        </table>
+        
+    </fieldset>
+    
+</form>
+<template be-active>
+    <script data-version=0.0.34 data-when=be-importing id=be-loaded/be-loaded.js></script>
+    <script data-version=latest data-when=be-loaded id=be-observant/be-observant.js></script>
+    <script data-version=latest data-when=be-observant id=be-noticed/be-noticed.js></script>
+</template>
+<be-hive></be-hive>
+
+    </template>
+</cotus-union>
+
+<script type=module>
+    if(customElements.get('be-active') === undefined){
+        import('be-active/be-active.js').catch(err => {
+            import('https://esm.run/be-active@0.0.15/be-active.js');
+        });
+    }
+</script>
+

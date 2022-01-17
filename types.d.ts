@@ -1,3 +1,10 @@
+export interface UnionProps {
+    congress: CongressProps & CongressActions;
+    executive: ExecutiveProps & ExecutiveActions;
+}
+
+export interface UnionActions {
+}
 
 export interface CongressProps extends Status{
     senate: SenateProps & SenateActions;
@@ -45,7 +52,10 @@ export interface HouseActions extends LegislativeBranchActions{
 export interface ExecutiveProps{
     president: PresidentProps;
     vicePresident: VicePresidentProps;
-    
+}
+
+export interface ExecutiveActions{
+
 }
 
 export interface PresidentProps{
