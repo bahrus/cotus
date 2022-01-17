@@ -1,10 +1,11 @@
 
-<cotus-house t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-house","propDefaults":{"noOfDemocrats":217,"noOfRepublicans":217,"noOfIndependents":1,"inSession":false},"propInfo":{"inSession":{"notify":{"reflect":{"asAttr":true}}}}}}'>
+<cotus-house t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-house","propDefaults":{"noOfDemocrats":217,"noOfRepublicans":217,"noOfIndependents":1,"inSession":false},"propInfo":{"inSession":{"notify":{"reflect":{"asAttr":true}}}}},"scriptPath":"./act/house.js","superclass":"House","scriptRef":"a_1642463421903"}'>
     <!---->
     <template shadowroot="open">
         <template be-active>
             <script data-version=latest id="be-importing/be-importing.js"></script>
             <script data-version=latest id="be-definitive/be-definitive.js" data-when=be-importing></script>
+<script data-version=latest data-when=be-importing id="be-exportable/be-exportable.js"></script>
             
             
         </template>
@@ -93,6 +94,19 @@
         
     </fieldset>
     
+    <fieldset>
+        <legend>Actions</legend>
+        <table>
+            
+        <tr part="action-container action-container-impeachPresident" class="action-container action-container-impeachPresident">
+            <td colspan=2>
+                <button>Impeach President</button>
+            </td>
+        </tr>
+        </table>
+        
+    </fieldset>
+    
 </form>
 <template be-active>
     <script data-version=0.0.34 data-when=be-importing id=be-loaded/be-loaded.js></script>
@@ -103,7 +117,7 @@
 
     </template>
 </cotus-house>
-
+<script id=a_1642463421903 nomodule be-exportable src="./act/house.js"></script>
 <script type=module>
     if(customElements.get('be-active') === undefined){
         import('be-active/be-active.js').catch(err => {

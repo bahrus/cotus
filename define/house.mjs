@@ -19,16 +19,24 @@ const beDefinitiveProps = {
                 }
             }
         }
-    }
+    },
+    scriptPath: './act/house.js',
+    superclass: 'House',
 };
 const visualHints = {
     fieldSets: {
         'Party Breakdown': ['noOfDemocrats', 'noOfRepublicans', 'noOfIndependents'],
         'Status': ['inSession'],
+        'Actions': ['impeachPresident'],
     },
     stylePaths: [
         '/style/common.css'
     ],
+    actionPresentationMap: {
+        impeachPresident: {
+            name: 'Impeach President',
+        }
+    }
 };
 const innerHTML = BaseScaffoldGenerator.generateFrom(beDefinitiveProps, visualHints).html;
 define({

@@ -2,6 +2,7 @@ import {html, define} from 'may-it-be/index.js';
 import {HouseProps, HouseActions} from '../types';
 import {MayItBe as mib, BeDefinitiveVirtualProps as def } from 'may-it-be/types';
 import { BaseScaffoldGenerator,  VisualHints} from 'may-it-be/BaseScaffold.js';
+import { House } from '../act/house';
 
 const mode = process.argv[2] as '-js' | '-html';
 
@@ -23,17 +24,25 @@ const beDefinitiveProps: def<HouseProps, HouseActions> = {
                 }
             }
         }
-    }
+    },
+    scriptPath: './act/house.js',
+    superclass: 'House',
 };
 
 const visualHints: VisualHints<HouseProps, HouseActions> = {
     fieldSets: {
         'Party Breakdown': ['noOfDemocrats', 'noOfRepublicans', 'noOfIndependents'],
         'Status': ['inSession'],
+        'Actions': ['impeachPresident'],
     },
     stylePaths: [
         '/style/common.css'
     ],
+    actionPresentationMap:{
+        impeachPresident:{
+            name: 'Impeach President',
+        }
+    }
 };
 
 const innerHTML = BaseScaffoldGenerator.generateFrom(beDefinitiveProps, visualHints).html;

@@ -14,7 +14,8 @@
 		"define/president.mts",
 		"define/executive.mts",
 		"define/union.mts",
-		"act/congress.ts"
+		"act/congress.ts",
+		"act/house.ts"
 	],
 	"exclude":[
 		"node_modules"
