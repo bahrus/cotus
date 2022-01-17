@@ -52,6 +52,9 @@ const visualHints = {
         'Chambers': ['house', 'senate'],
         'Status': ['inSession'],
     },
+    stylePaths: [
+        '../style/common.css'
+    ]
 };
 const innerHTML = BaseScaffoldGenerator.generateFrom(beDefinitiveProps, visualHints).html;
 define({

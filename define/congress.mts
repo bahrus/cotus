@@ -1,5 +1,5 @@
 import {html, define} from 'may-it-be/index.js';
-import {CongressProps, CongressActions} from './types';
+import {CongressProps, CongressActions} from '../types';
 import {MayItBe as mib, BeDefinitiveVirtualProps as def } from 'may-it-be/types';
 import { BaseScaffoldGenerator,  VisualHints} from 'may-it-be/BaseScaffold.js';
 
@@ -57,6 +57,9 @@ const visualHints: VisualHints<CongressProps, CongressActions> = {
         'Chambers': ['house', 'senate'],
         'Status': ['inSession'],
     },
+    stylePaths: [
+        '../style/common.css'
+    ]
 };
 
 const innerHTML = BaseScaffoldGenerator.generateFrom(beDefinitiveProps, visualHints).html;
