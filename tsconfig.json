@@ -8,10 +8,10 @@
 		"watch": true
 	},
 	"files":[
-		"cs-config.mts",
-		"ch-config.mts",
-		"cc-config.mts",
-		"cotus-congress.cs.ts"
+		"define/senate.mts",
+		"define/house.mts",
+		"define/congress.mts",
+		"act/congress.ts"
 	],
 	"exclude":[
 		"node_modules"

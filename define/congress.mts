@@ -10,9 +10,15 @@ const beDefinitiveProps: def<CongressProps, CongressActions> = {
         tagName: 'cotus-congress',
         propDefaults:{
             inSession: false,
+        },
+        actions:{
+            onInSession: {
+                ifAllOf: ['inSession'],
+            },
         }
     },
-    //scriptPath: './cotus-congress.cs.js',
+    scriptPath: './cotus-congress.cs.js',
+    superclass: 'CotusCongressCore',
 };
 
 const visualHints: VisualHints<CongressProps, CongressActions> = {

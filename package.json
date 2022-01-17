@@ -6,21 +6,21 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "node node_modules/xtal-test/serve.js",
-    "build-cs-html": "node cs-config.mjs -html > cotus-senate.html",
-    "build-ch-html": "node ch-config.mjs -html > cotus-house.html",
-    "build-cc-html": "node cc-config.mjs -html > cotus-congress.html",
+    "build-senate.html": "node define/senate.mjs -html > cotus-senate.html",
+    "build-house.html": "node define/house.mjs -html > cotus-house.html",
+    "build-congress.html": "node define/congress.mjs -html > cotus-congress.html",
     "watch": "npm-watch"
   },
   "files": [
     "*.*"
   ],
   "watch": {
-    "build-cs-html": "cs-config.mjs",
-    "build-ch-html": "ch-config.mjs",
-    "build-cc-html": "cc-config.mjs"
+    "build-senate.html": "define/senate.mjs",
+    "build-house.html": "define/house.mjs",
+    "build-congress.html": "define/congress.mjs"
   },
   "dependencies": {
-    "may-it-be": "0.0.61"
+    "may-it-be": "0.0.63"
   },
   "devDependencies": {
     "@custom-elements-manifest/analyzer": "0.5.7",
