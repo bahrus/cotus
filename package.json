@@ -20,7 +20,7 @@
     "build-congress.html": "define/congress.mjs"
   },
   "dependencies": {
-    "may-it-be": "0.0.68"
+    "may-it-be": "0.0.72"
   },
   "devDependencies": {
     "@custom-elements-manifest/analyzer": "0.5.7",
