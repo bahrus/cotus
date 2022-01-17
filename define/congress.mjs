@@ -13,8 +13,8 @@ const beDefinitiveProps = {
             },
         }
     },
-    scriptPath: './cotus-congress.cs.js',
-    superclass: 'CotusCongressCore',
+    scriptPath: './act/congress.js',
+    superclass: 'Congress',
 };
 const visualHints = {
     propPresentationMap: {

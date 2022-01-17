@@ -1,4 +1,4 @@
-export class CotusCongressCore extends HTMLElement {
+export class Congress extends HTMLElement {
     onInSession({ inSession }) {
         console.log(inSession);
     }

@@ -17,8 +17,8 @@ const beDefinitiveProps: def<CongressProps, CongressActions> = {
             },
         }
     },
-    scriptPath: './cotus-congress.cs.js',
-    superclass: 'CotusCongressCore',
+    scriptPath: './act/congress.js',
+    superclass: 'Congress',
 };
 
 const visualHints: VisualHints<CongressProps, CongressActions> = {
