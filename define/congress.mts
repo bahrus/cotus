@@ -58,7 +58,7 @@ const visualHints: VisualHints<CongressProps, CongressActions> = {
         'Status': ['inSession'],
     },
     stylePaths: [
-        '../style/common.css'
+        '/style/common.css'
     ]
 };
 

@@ -1,5 +1,5 @@
 
-<cotus-congress t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-congress","propDefaults":{"inSession":false},"actions":{"onInSession":{"ifAllOf":["inSession"]}}},"scriptPath":"./act/congress.js","superclass":"Congress","scriptRef":"a_1642412994050"}'>
+<cotus-congress t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-congress","propDefaults":{"inSession":false},"actions":{"onInSession":{"ifAllOf":["inSession"]}}},"scriptPath":"./act/congress.js","superclass":"Congress","scriptRef":"a_1642421464160"}'>
     <!---->
     <template shadowroot="open">
         <template be-active>
@@ -15,7 +15,7 @@
     }
 </style>
 
-<style be-loaded='{"removeStyle":true,"fallback":"../style/common.css"}'>
+<style be-loaded='{"removeStyle":true,"fallback":"/style/common.css"}'>
     form{
         display: none;
     }
@@ -29,25 +29,25 @@
         <table>
             
 <tr part="field-container field-container-house" class="field-container field-container-house"> 
-    <td>
-        <label part="label label-house" class=label-house for=house>House of Representatives:</label>
-    </td>
-    <td>
-        
+    
+        <td colspan=2>
+            <div><label part="label label-house" class=label-house for=house>House of Representatives:</label></div>
+            
         <cotus-house  style="min-height: 200px;display: flex"   id=house  be-importing=./cotus-house.html itemprop=house></cotus-house>
 
-    </td>
+        </td>
+    
 </tr>
 
 <tr part="field-container field-container-senate" class="field-container field-container-senate"> 
-    <td>
-        <label part="label label-senate" class=label-senate for=senate>Senate:</label>
-    </td>
-    <td>
-        
+    
+        <td colspan=2>
+            <div><label part="label label-senate" class=label-senate for=senate>Senate:</label></div>
+            
         <cotus-senate  style="min-height: 200px;display: flex"   id=senate  be-importing=./cotus-senate.html itemprop=senate></cotus-senate>
 
-    </td>
+        </td>
+    
 </tr>
 
         </table>
@@ -59,13 +59,16 @@
         <table>
             
 <tr part="field-container field-container-inSession" class="field-container field-container-inSession"> 
-    <td>
-        <label part="label label-inSession" class=label-inSession for=inSession>In Session:</label>
-    </td>
-    <td>
-        
+    
+        <td>
+            <label part="label label-inSession" class=label-inSession for=inSession>In Session:</label>
+        </td>
+        <td>
+
             <input  id=inSession itemprop=inSession type=checkbox value=false be-noticed='{"input":{"prop":"inSession","vft":"checked","parseValAs":"string"}}'be-observant='{"checked":".inSession"}'  be-consensual='{"elementSelector":"[is-importing][is-definitive]","onStateSelector":"[in-session]","offStateSelector":":not([in-session])","prop":"inSession"}'>
-    </td>
+            
+        </td>
+    
 </tr>
 
         </table>
@@ -83,7 +86,7 @@
 
     </template>
 </cotus-congress>
-<script id=a_1642412994050 nomodule be-exportable src="./act/congress.js"></script>
+<script id=a_1642421464160 nomodule be-exportable src="./act/congress.js"></script>
 <script type=module>
     if(customElements.get('be-active') === undefined){
         import('be-active/be-active.js').catch(err => {

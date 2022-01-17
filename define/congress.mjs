@@ -53,7 +53,7 @@ const visualHints = {
         'Status': ['inSession'],
     },
     stylePaths: [
-        '../style/common.css'
+        '/style/common.css'
     ]
 };
 const innerHTML = BaseScaffoldGenerator.generateFrom(beDefinitiveProps, visualHints).html;
