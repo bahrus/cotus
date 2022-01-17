@@ -30,7 +30,10 @@ const visualHints: VisualHints<SenateProps, SenateActions> = {
     fieldSets: {
         'Party Breakdown': ['noOfDemocrats', 'noOfRepublicans', 'noOfIndependents'],
         'Status': ['inSession'],
-    }
+    },
+    stylePaths: [
+        '/style/common.css'
+    ],
 };
 
 const innerHTML = BaseScaffoldGenerator.generateFrom(beDefinitiveProps, visualHints).html;
