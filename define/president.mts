@@ -14,7 +14,13 @@ const beDefinitiveProps: def<PresidentProps, {}> = {
             party: 'Democrat',
         }
     },
-}
+};
+
+const visualHints: VisualHints<PresidentProps> = {
+    stylePaths: [
+        '/style/common.css'
+    ],
+};
 
 const innerHTML = BaseScaffoldGenerator.generateFrom(beDefinitiveProps, {}).html;
 

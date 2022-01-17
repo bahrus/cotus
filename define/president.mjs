@@ -11,6 +11,11 @@ const beDefinitiveProps = {
         }
     },
 };
+const visualHints = {
+    stylePaths: [
+        '/style/common.css'
+    ],
+};
 const innerHTML = BaseScaffoldGenerator.generateFrom(beDefinitiveProps, {}).html;
 define({
     innerHTML,

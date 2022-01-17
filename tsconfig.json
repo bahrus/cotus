@@ -12,6 +12,7 @@
 		"define/house.mts",
 		"define/congress.mts",
 		"define/president.mts",
+		"define/executive.mts",
 		"act/congress.ts"
 	],
 	"exclude":[

@@ -1,0 +1,59 @@
+
+<cotus-executive t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-executive"}}'>
+    <!---->
+    <template shadowroot="open">
+        <template be-active>
+            <script data-version=latest id="be-importing/be-importing.js"></script>
+            <script data-version=latest id="be-definitive/be-definitive.js" data-when=be-importing></script>
+            
+            <link rel="stylesheet" href="https://unpkg.com/open-props/colors.min.css">
+        </template>
+        
+
+<style>
+    :host{
+        display: block;
+    }
+</style>
+
+        
+<form>
+
+    <fieldset>
+        <legend>Unclassified</legend>
+        <table>
+            
+<tr part="field-container field-container-president" class="field-container field-container-president"> 
+    
+        <td colspan=2>
+            <div><label part="label label-president" class=label-president for=president>POTUS:</label></div>
+            
+        <cotus-potus  style="min-height: 200px;display: flex"   id=president  be-importing=./cotus-potus.html itemprop=president></cotus-potus>
+
+        </td>
+    
+</tr>
+
+        </table>
+        
+    </fieldset>
+    
+</form>
+<template be-active>
+    <script data-version=0.0.34 data-when=be-importing id=be-loaded/be-loaded.js></script>
+    <script data-version=latest data-when=be-loaded id=be-observant/be-observant.js></script>
+    <script data-version=latest data-when=be-observant id=be-noticed/be-noticed.js></script>
+</template>
+<be-hive></be-hive>
+
+    </template>
+</cotus-executive>
+
+<script type=module>
+    if(customElements.get('be-active') === undefined){
+        import('be-active/be-active.js').catch(err => {
+            import('https://esm.run/be-active@0.0.15/be-active.js');
+        });
+    }
+</script>
+
