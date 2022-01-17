@@ -9,6 +9,7 @@
     "build-senate.html": "node define/senate.mjs -html > cotus-senate.html",
     "build-house.html": "node define/house.mjs -html > cotus-house.html",
     "build-congress.html": "node define/congress.mjs -html > cotus-congress.html",
+    "build-potus.html": "node define/president.mjs -html > cotus-potus.html",
     "watch": "npm-watch"
   },
   "files": [
@@ -17,7 +18,8 @@
   "watch": {
     "build-senate.html": "define/senate.mjs",
     "build-house.html": "define/house.mjs",
-    "build-congress.html": "define/congress.mjs"
+    "build-congress.html": "define/congress.mjs",
+    "build-potus.html": "define/president.mjs"
   },
   "dependencies": {
     "may-it-be": "0.0.77"

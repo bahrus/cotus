@@ -1,7 +1,7 @@
 
 export interface CongressProps extends Status{
-    senate: SenateProps;
-    house: HouseProps;
+    senate: SenateProps & SenateActions;
+    house: HouseProps & SenateActions;
 }
 
 export interface Status{
@@ -30,6 +30,7 @@ export interface SenateProps extends PartyAffiliation, Status{
 }
 
 export interface SenateActions extends LegislativeBranchActions{
+    
 }
 
 export interface HouseProps extends PartyAffiliation, Status{
@@ -38,4 +39,24 @@ export interface HouseProps extends PartyAffiliation, Status{
 }
 
 export interface HouseActions extends LegislativeBranchActions{
+    impeachPresident(self: this): void;
+}
+
+export interface ExecutiveProps{
+    president: PresidentProps;
+    vicePresident: VicePresidentProps;
+    
+}
+
+export interface PresidentProps{
+    name: string;
+    party: string;
+    impeachmentCount: number;
+}
+
+export interface VicePresidentProps{
+
+}
+
+export interface CabinetProps{
 }

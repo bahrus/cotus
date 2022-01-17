@@ -1,0 +1,87 @@
+
+<cotus-potus t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-potus","propDefaults":{"impeachmentCount":0,"name":"Joe Biden","party":"Democrat"}}}'>
+    <!---->
+    <template shadowroot="open">
+        <template be-active>
+            <script data-version=latest id="be-importing/be-importing.js"></script>
+            <script data-version=latest id="be-definitive/be-definitive.js" data-when=be-importing></script>
+            
+            
+        </template>
+        
+
+<style>
+    :host{
+        display: block;
+    }
+</style>
+
+        
+<form>
+
+    <fieldset>
+        <legend>Unclassified</legend>
+        <table>
+            
+<tr part="field-container field-container-impeachmentCount" class="field-container field-container-impeachmentCount"> 
+    
+        <td>
+            <label part="label label-impeachmentCount" class=label-impeachmentCount for=impeachmentCount>impeachmentCount:</label>
+        </td>
+        <td>
+
+            <input  id=impeachmentCount itemprop=impeachmentCount type=number value=0 be-noticed='{"input":{"prop":"impeachmentCount","vft":"value","parseValAs":"int"}}'be-observant='{"value":".impeachmentCount"}' >
+            
+        </td>
+    
+</tr>
+
+<tr part="field-container field-container-name" class="field-container field-container-name"> 
+    
+        <td>
+            <label part="label label-name" class=label-name for=name>name:</label>
+        </td>
+        <td>
+
+            <input  id=name itemprop=name type=text value=Joe Biden be-noticed='{"input":{"prop":"name","vft":"value","parseValAs":"string"}}'be-observant='{"value":".name"}' >
+            
+        </td>
+    
+</tr>
+
+<tr part="field-container field-container-party" class="field-container field-container-party"> 
+    
+        <td>
+            <label part="label label-party" class=label-party for=party>party:</label>
+        </td>
+        <td>
+
+            <input  id=party itemprop=party type=text value=Democrat be-noticed='{"input":{"prop":"party","vft":"value","parseValAs":"string"}}'be-observant='{"value":".party"}' >
+            
+        </td>
+    
+</tr>
+
+        </table>
+        
+    </fieldset>
+    
+</form>
+<template be-active>
+    <script data-version=0.0.34 data-when=be-importing id=be-loaded/be-loaded.js></script>
+    <script data-version=latest data-when=be-loaded id=be-observant/be-observant.js></script>
+    <script data-version=latest data-when=be-observant id=be-noticed/be-noticed.js></script>
+</template>
+<be-hive></be-hive>
+
+    </template>
+</cotus-potus>
+
+<script type=module>
+    if(customElements.get('be-active') === undefined){
+        import('be-active/be-active.js').catch(err => {
+            import('https://esm.run/be-active@0.0.15/be-active.js');
+        });
+    }
+</script>
+
