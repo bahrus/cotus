@@ -71,8 +71,6 @@ define({
     beDefinitiveProps,
     encodeAndWrite: console.log,
     dependencies: ['be-consensual@0.0.3/be-consensual.js'],
-    standAloneHTML: html`
-<link rel=stylesheet href=https://unpkg.com/open-props/colors.min.css>
-    `
+    globalStylePaths: ['https://unpkg.com/open-props/colors.min.css']
 });
 

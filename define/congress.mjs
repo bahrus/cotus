@@ -1,4 +1,4 @@
-import { html, define } from 'may-it-be/index.js';
+import { define } from 'may-it-be/index.js';
 import { BaseScaffoldGenerator } from 'may-it-be/BaseScaffold.js';
 const mode = process.argv[2];
 const beDefinitiveProps = {
@@ -64,7 +64,5 @@ define({
     beDefinitiveProps,
     encodeAndWrite: console.log,
     dependencies: ['be-consensual@0.0.3/be-consensual.js'],
-    standAloneHTML: html `
-<link rel=stylesheet href=https://unpkg.com/open-props/colors.min.css>
-    `
+    globalStylePaths: ['https://unpkg.com/open-props/colors.min.css']
 });
