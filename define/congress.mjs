@@ -1,4 +1,4 @@
-import { define } from 'may-it-be/index.js';
+import { html, define } from 'may-it-be/index.js';
 import { BaseScaffoldGenerator } from 'may-it-be/BaseScaffold.js';
 const mode = process.argv[2];
 const beDefinitiveProps = {
@@ -53,7 +53,8 @@ const visualHints = {
         'Status': ['inSession'],
     },
     stylePaths: [
-        '/style/common.css'
+        '/style/common.css',
+        //'https://unpkg.com/open-props/colors.min.css'
     ]
 };
 const innerHTML = BaseScaffoldGenerator.generateFrom(beDefinitiveProps, visualHints).html;
@@ -63,4 +64,7 @@ define({
     beDefinitiveProps,
     encodeAndWrite: console.log,
     dependencies: ['be-consensual@0.0.3/be-consensual.js'],
+    standAloneHTML: html `
+<link rel=stylesheet href=https://unpkg.com/open-props/colors.min.css>
+    `
 });

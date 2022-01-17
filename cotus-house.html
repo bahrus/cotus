@@ -3,7 +3,8 @@
     <!---->
     <template shadowroot="open">
         <template be-active>
-            <script id="be-definitive/be-definitive.js"></script>
+            <script data-version=latest id="be-importing/be-importing.js"></script>
+            <script data-version=latest id="be-definitive/be-definitive.js" data-when=be-importing></script>
             
         </template>
         
@@ -11,6 +12,12 @@
 <style>
     :host{
         display: block;
+    }
+</style>
+
+<style be-loaded='{"removeStyle":true,"preloadRef":"/style/common.css","fallback":"/style/common.css"}'>
+    form{
+        pointer-events: none;
     }
 </style>
 
@@ -87,10 +94,9 @@
     
 </form>
 <template be-active>
-    <script data-version=latest id=be-noticed/be-noticed.js></script>
-    <script data-version=latest id=be-importing/be-importing.js></script>
-    <script data-version=latest id=be-observant/be-observant.js></script>
-    <script data-version=0.0.34 id=be-loaded/be-loaded.js></script>
+    <script data-version=0.0.34 data-when=be-importing id=be-loaded/be-loaded.js></script>
+    <script data-version=latest data-when=be-loaded id=be-observant/be-observant.js></script>
+    <script data-version=latest data-when=be-observant id=be-noticed/be-noticed.js></script>
 </template>
 <be-hive></be-hive>
 
@@ -100,7 +106,7 @@
 <script type=module>
     if(customElements.get('be-active') === undefined){
         import('be-active/be-active.js').catch(err => {
-            import('https://esm.run/be-active/be-active.js');
+            import('https://esm.run/be-active@0.0.15/be-active.js');
         });
     }
 </script>

@@ -1,11 +1,14 @@
 
-<cotus-congress t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-congress","propDefaults":{"inSession":false},"actions":{"onInSession":{"ifAllOf":["inSession"]}}},"scriptPath":"./act/congress.js","superclass":"Congress","scriptRef":"a_1642424817128"}'>
+<link rel=stylesheet href=https://unpkg.com/open-props/colors.min.css>
+    
+<cotus-congress t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-congress","propDefaults":{"inSession":false},"actions":{"onInSession":{"ifAllOf":["inSession"]}}},"scriptPath":"./act/congress.js","superclass":"Congress","scriptRef":"a_1642449018605"}'>
     <!---->
     <template shadowroot="open">
         <template be-active>
-            <script id="be-definitive/be-definitive.js"></script>
-<script data-version=latest id="be-exportable/be-exportable.js"></script>
-            <script id="be-consensual@0.0.3/be-consensual.js"></script>
+            <script data-version=latest id="be-importing/be-importing.js"></script>
+            <script data-version=latest id="be-definitive/be-definitive.js" data-when=be-importing></script>
+<script data-version=latest data-when=be-importing id="be-exportable/be-exportable.js"></script>
+            <script data-when=be-importing id="be-consensual@0.0.3/be-consensual.js"></script>
         </template>
         
 
@@ -77,20 +80,19 @@
     
 </form>
 <template be-active>
-    <script data-version=latest id=be-noticed/be-noticed.js></script>
-    <script data-version=latest id=be-importing/be-importing.js></script>
-    <script data-version=latest id=be-observant/be-observant.js></script>
-    <script data-version=0.0.34 id=be-loaded/be-loaded.js></script>
+    <script data-version=0.0.34 data-when=be-importing id=be-loaded/be-loaded.js></script>
+    <script data-version=latest data-when=be-loaded id=be-observant/be-observant.js></script>
+    <script data-version=latest data-when=be-observant id=be-noticed/be-noticed.js></script>
 </template>
 <be-hive></be-hive>
 
     </template>
 </cotus-congress>
-<script id=a_1642424817128 nomodule be-exportable src="./act/congress.js"></script>
+<script id=a_1642449018605 nomodule be-exportable src="./act/congress.js"></script>
 <script type=module>
     if(customElements.get('be-active') === undefined){
         import('be-active/be-active.js').catch(err => {
-            import('https://esm.run/be-active/be-active.js');
+            import('https://esm.run/be-active@0.0.15/be-active.js');
         });
     }
 </script>
