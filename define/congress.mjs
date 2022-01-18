@@ -54,7 +54,6 @@ const visualHints = {
     },
     stylePaths: [
         '/style/common.css',
-        //'https://unpkg.com/open-props/colors.min.css'
     ]
 };
 const innerHTML = BaseScaffoldGenerator.generateFrom(beDefinitiveProps, visualHints).html;

@@ -31,7 +31,10 @@ const visualHints: VisualHints<UnionProps, UnionActions> = {
                 display: 'flex',
             }
         },
-    }
+    },
+    stylePaths: [
+        '/style/common.css',
+    ]
 }
 
 const innerHTML = BaseScaffoldGenerator.generateFrom(beDefinitiveProps, visualHints).html;

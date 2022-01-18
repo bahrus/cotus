@@ -26,7 +26,10 @@ const visualHints = {
                 display: 'flex',
             }
         },
-    }
+    },
+    stylePaths: [
+        '/style/common.css',
+    ]
 };
 const innerHTML = BaseScaffoldGenerator.generateFrom(beDefinitiveProps, visualHints).html;
 define({

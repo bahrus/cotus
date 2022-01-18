@@ -16,7 +16,7 @@ const visualHints = {
         '/style/common.css'
     ],
 };
-const innerHTML = BaseScaffoldGenerator.generateFrom(beDefinitiveProps, {}).html;
+const innerHTML = BaseScaffoldGenerator.generateFrom(beDefinitiveProps, visualHints).html;
 define({
     innerHTML,
     mode,

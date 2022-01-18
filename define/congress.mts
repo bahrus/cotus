@@ -59,7 +59,6 @@ const visualHints: VisualHints<CongressProps, CongressActions> = {
     },
     stylePaths: [
         '/style/common.css',
-        //'https://unpkg.com/open-props/colors.min.css'
     ]
 };
 

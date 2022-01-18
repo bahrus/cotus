@@ -22,7 +22,7 @@ const visualHints: VisualHints<PresidentProps> = {
     ],
 };
 
-const innerHTML = BaseScaffoldGenerator.generateFrom(beDefinitiveProps, {}).html;
+const innerHTML = BaseScaffoldGenerator.generateFrom(beDefinitiveProps, visualHints).html;
 
 define({
     innerHTML,
