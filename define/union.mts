@@ -18,7 +18,8 @@ const visualHints: VisualHints<UnionProps, UnionActions> = {
             tagName: 'cotus-congress',
             ssrPath: './cotus-congress.html',
             style: {
-                minHeight: '400px',
+                minHeight: '700px',
+                minWidth: '550px',
                 display: 'flex',
             }
         },
@@ -28,6 +29,7 @@ const visualHints: VisualHints<UnionProps, UnionActions> = {
             ssrPath: './cotus-executive.html',
             style: {
                 minHeight: '400px',
+                minWidth: '550px',
                 display: 'flex',
             }
         },

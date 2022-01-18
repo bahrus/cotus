@@ -24,6 +24,7 @@ const visualHints = {
             ssrPath: './cotus-house.html',
             style: {
                 minHeight: '200px',
+                minWidth: '425px',
                 display: 'flex',
             }
         },
@@ -33,6 +34,7 @@ const visualHints = {
             ssrPath: './cotus-senate.html',
             style: {
                 minHeight: '200px',
+                minWidth: '425px',
                 display: 'flex',
             }
         },

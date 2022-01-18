@@ -14,6 +14,7 @@ const visualHints = {
             ssrPath: './cotus-potus.html',
             style: {
                 minHeight: '200px',
+                minWidth: '425px',
                 display: 'flex',
             }
         }

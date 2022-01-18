@@ -29,6 +29,7 @@ const visualHints: VisualHints<CongressProps, CongressActions> = {
             ssrPath: './cotus-house.html',
             style:{
                 minHeight: '200px',
+                minWidth: '425px',
                 display: 'flex',            
             }
         },
@@ -38,6 +39,7 @@ const visualHints: VisualHints<CongressProps, CongressActions> = {
             ssrPath: './cotus-senate.html',
             style:{
                 minHeight: '200px',
+                minWidth: '425px',
                 display: 'flex',            
             }
         },
