@@ -1,5 +1,5 @@
 
-<cotus-congress t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-congress","propDefaults":{"inSession":false},"actions":{"onInSession":{"ifAllOf":["inSession"]}}},"scriptPath":"./act/congress.js","superclass":"Congress","scriptRef":"a_1642520975365"}'>
+<cotus-congress t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-congress","propDefaults":{"inSession":false},"actions":{"onInSession":{"ifAllOf":["inSession"]}}},"scriptPath":"./act/congress.js","superclass":"Congress","scriptRef":"a_1642521778869"}'>
     <!---->
     <template shadowroot="open">
         <template be-active>
@@ -36,7 +36,7 @@
             <fieldset>
                 <legend>House of Representatives</legend>
                 
-        <cotus-house  style="min-height: 200px;min-width: 425px;display: flex"   id=house  be-importing=./cotus-house.html itemprop=house></cotus-house>
+        <cotus-house  style="min-height: 280px;min-width: 425px;display: flex"   id=house  be-importing=./cotus-house.html itemprop=house></cotus-house>
 
             </fieldset>
         </td>
@@ -49,7 +49,7 @@
             <fieldset>
                 <legend>Senate</legend>
                 
-        <cotus-senate  style="min-height: 200px;min-width: 425px;display: flex"   id=senate  be-importing=./cotus-senate.html itemprop=senate></cotus-senate>
+        <cotus-senate  style="min-height: 250px;min-width: 425px;display: flex"   id=senate  be-importing=./cotus-senate.html itemprop=senate></cotus-senate>
 
             </fieldset>
         </td>
@@ -91,7 +91,7 @@
 
     </template>
 </cotus-congress>
-<script id=a_1642520975365 nomodule be-exportable src="./act/congress.js"></script>
+<script id=a_1642521778869 nomodule be-exportable src="./act/congress.js"></script>
 <script type=module>
     if(customElements.get('be-active') === undefined){
         import('be-active/be-active.js').catch(err => {

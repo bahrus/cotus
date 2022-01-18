@@ -28,7 +28,7 @@ const visualHints: VisualHints<CongressProps, CongressActions> = {
             tagName: 'cotus-house',
             ssrPath: './cotus-house.html',
             style:{
-                minHeight: '200px',
+                minHeight: '280px',
                 minWidth: '425px',
                 display: 'flex',            
             }
@@ -38,7 +38,7 @@ const visualHints: VisualHints<CongressProps, CongressActions> = {
             tagName: 'cotus-senate',
             ssrPath: './cotus-senate.html',
             style:{
-                minHeight: '200px',
+                minHeight: '250px',
                 minWidth: '425px',
                 display: 'flex',            
             }
