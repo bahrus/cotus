@@ -1,5 +1,5 @@
 
-<cotus-congress t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-congress","propDefaults":{"inSession":false},"actions":{"onInSession":{"ifAllOf":["inSession"]}}},"scriptPath":"./act/congress.js","superclass":"Congress","scriptRef":"a_1642499392399"}'>
+<cotus-congress t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-congress","propDefaults":{"inSession":false},"actions":{"onInSession":{"ifAllOf":["inSession"]}}},"scriptPath":"./act/congress.js","superclass":"Congress","scriptRef":"a_1642499578785"}'>
     <!---->
     <template shadowroot="open">
         <template be-active>
@@ -71,7 +71,7 @@
         </td>
         <td>
 
-            <input  id=inSession itemprop=inSession type=checkbox value=false be-noticed='{"input":{"prop":"inSession","vft":"checked","parseValAs":"string"}}'be-observant='{"checked":".inSession"}'  be-consensual='{"elementSelector":"[is-importing][is-definitive]","onStateSelector":"[in-session]","offStateSelector":":not([in-session])","prop":"inSession"}'>
+            <input  id=inSession itemprop=inSession type=checkbox value="false" be-noticed='{"input":{"prop":"inSession","vft":"checked","parseValAs":"string"}}'be-observant='{"checked":".inSession"}'  be-consensual='{"elementSelector":"[is-importing][is-definitive]","onStateSelector":"[in-session]","offStateSelector":":not([in-session])","prop":"inSession"}'>
             
         </td>
     
@@ -91,7 +91,7 @@
 
     </template>
 </cotus-congress>
-<script id=a_1642499392399 nomodule be-exportable src="./act/congress.js"></script>
+<script id=a_1642499578785 nomodule be-exportable src="./act/congress.js"></script>
 <script type=module>
     if(customElements.get('be-active') === undefined){
         import('be-active/be-active.js').catch(err => {
