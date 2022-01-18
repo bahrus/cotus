@@ -1,9 +1,9 @@
 
-<cotus-house t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-house","propDefaults":{"noOfDemocrats":217,"noOfRepublicans":217,"noOfIndependents":1,"inSession":false},"propInfo":{"inSession":{"notify":{"reflect":{"asAttr":true}}}}},"scriptPath":"./act/house.js","superclass":"House","scriptRef":"a_1642463421903"}'>
+<cotus-house t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-house","propDefaults":{"noOfDemocrats":217,"noOfRepublicans":217,"noOfIndependents":1,"noOfPresidentialImpeachments":4,"inSession":false},"propInfo":{"inSession":{"notify":{"reflect":{"asAttr":true}}}}},"scriptPath":"./act/house.js","superclass":"House","scriptRef":"a_1642496979003"}'>
     <!---->
     <template shadowroot="open">
         <template be-active>
-            <script data-version=latest id="be-importing/be-importing.js"></script>
+            <script data-version=0.0.3 id="be-importing/be-importing.js"></script>
             <script data-version=latest id="be-definitive/be-definitive.js" data-when=be-importing></script>
 <script data-version=latest data-when=be-importing id="be-exportable/be-exportable.js"></script>
             
@@ -90,6 +90,19 @@
     
 </tr>
 
+<tr part="field-container field-container-noOfPresidentialImpeachments" class="field-container field-container-noOfPresidentialImpeachments"> 
+    
+        <td>
+            <label part="label label-noOfPresidentialImpeachments" class=label-noOfPresidentialImpeachments for=noOfPresidentialImpeachments>noOfPresidentialImpeachments:</label>
+        </td>
+        <td>
+
+            <input  id=noOfPresidentialImpeachments itemprop=noOfPresidentialImpeachments type=number value=4 be-noticed='{"input":{"prop":"noOfPresidentialImpeachments","vft":"value","parseValAs":"int"}}'be-observant='{"value":".noOfPresidentialImpeachments"}' >
+            
+        </td>
+    
+</tr>
+
         </table>
         
     </fieldset>
@@ -100,7 +113,7 @@
             
         <tr part="action-container action-container-impeachPresident" class="action-container action-container-impeachPresident">
             <td colspan=2>
-                <button>Impeach President</button>
+                <button type=button be-noticed='{"click":{"fn":"impeachPresident"}}'>Impeach President</button>
             </td>
         </tr>
         </table>
@@ -117,7 +130,7 @@
 
     </template>
 </cotus-house>
-<script id=a_1642463421903 nomodule be-exportable src="./act/house.js"></script>
+<script id=a_1642496979003 nomodule be-exportable src="./act/house.js"></script>
 <script type=module>
     if(customElements.get('be-active') === undefined){
         import('be-active/be-active.js').catch(err => {

@@ -8,6 +8,7 @@ const beDefinitiveProps = {
             noOfDemocrats: 217,
             noOfRepublicans: 217,
             noOfIndependents: 1,
+            noOfPresidentialImpeachments: 4,
             inSession: false,
         },
         propInfo: {
@@ -26,7 +27,7 @@ const beDefinitiveProps = {
 const visualHints = {
     fieldSets: {
         'Party Breakdown': ['noOfDemocrats', 'noOfRepublicans', 'noOfIndependents'],
-        'Status': ['inSession'],
+        'Status': ['inSession', 'noOfPresidentialImpeachments'],
         'Actions': ['impeachPresident'],
     },
     stylePaths: [
