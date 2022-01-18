@@ -1,11 +1,11 @@
 
-<cotus-congress t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-congress","propDefaults":{"inSession":false},"actions":{"onInSession":{"ifAllOf":["inSession"]}}},"scriptPath":"./act/congress.js","superclass":"Congress","scriptRef":"a_1642496942318"}'>
+<cotus-congress t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-congress","propDefaults":{"inSession":false},"actions":{"onInSession":{"ifAllOf":["inSession"]}}},"scriptPath":"./act/congress.js","superclass":"Congress","scriptRef":"a_1642499392399"}'>
     <!---->
     <template shadowroot="open">
         <template be-active>
             <script data-version=0.0.3 id="be-importing/be-importing.js"></script>
             <script data-version=latest id="be-definitive/be-definitive.js" data-when=be-importing></script>
-<script data-version=latest data-when=be-importing id="be-exportable/be-exportable.js"></script>
+<script data-version=0.0.7 data-when=be-importing id="be-exportable/be-exportable.js"></script>
             <script data-when=be-importing id="be-consensual@0.0.3/be-consensual.js"></script>
             <link rel="stylesheet" href="https://unpkg.com/open-props/colors.min.css">
         </template>
@@ -33,10 +33,12 @@
 <tr part="field-container field-container-house" class="field-container field-container-house"> 
     
         <td colspan=2>
-            <div><label part="label label-house" class=label-house for=house>House of Representatives:</label></div>
-            
+            <fieldset>
+                <legend>House of Representatives</legend>
+                
         <cotus-house  style="min-height: 200px;display: flex"   id=house  be-importing=./cotus-house.html itemprop=house></cotus-house>
 
+            </fieldset>
         </td>
     
 </tr>
@@ -44,10 +46,12 @@
 <tr part="field-container field-container-senate" class="field-container field-container-senate"> 
     
         <td colspan=2>
-            <div><label part="label label-senate" class=label-senate for=senate>Senate:</label></div>
-            
+            <fieldset>
+                <legend>Senate</legend>
+                
         <cotus-senate  style="min-height: 200px;display: flex"   id=senate  be-importing=./cotus-senate.html itemprop=senate></cotus-senate>
 
+            </fieldset>
         </td>
     
 </tr>
@@ -87,7 +91,7 @@
 
     </template>
 </cotus-congress>
-<script id=a_1642496942318 nomodule be-exportable src="./act/congress.js"></script>
+<script id=a_1642499392399 nomodule be-exportable src="./act/congress.js"></script>
 <script type=module>
     if(customElements.get('be-active') === undefined){
         import('be-active/be-active.js').catch(err => {
