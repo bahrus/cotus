@@ -8,9 +8,9 @@ const beDefinitiveProps = {
             inSession: false,
         },
         actions: {
-            onInSession: {
-                ifAllOf: ['inSession'],
-            },
+        // onInSession: {
+        //     ifAllOf: ['inSession'],
+        // },
         }
     },
     scriptPath: './act/congress.js',
@@ -26,6 +26,11 @@ const visualHints = {
                 minHeight: '280px',
                 minWidth: '425px',
                 display: 'flex',
+            },
+            mayItBe: {
+                beTransactional: {
+                    noOfPresidentialImpeachments: 'union.congress.house.noOfPresidentialImpeachments',
+                }
             }
         },
         senate: {
@@ -42,7 +47,7 @@ const visualHints = {
             name: 'In Session',
             mayItBe: {
                 beConsensual: {
-                    elementSelector: '[is-importing][is-definitive]',
+                    elementSelector: '[is-importing][is-definitive][is-transactional]',
                     onStateSelector: '[in-session]',
                     offStateSelector: ':not([in-session])',
                     prop: 'inSession',
@@ -64,6 +69,9 @@ define({
     mode,
     beDefinitiveProps,
     encodeAndWrite: console.log,
-    dependencies: ['be-consensual@0.0.3/be-consensual.js'],
+    dependencies: [
+        'be-consensual@0.0.3/be-consensual.js',
+        'be-transactional@0.0.1/be-transactional.js',
+    ],
     globalStylePaths: ['https://unpkg.com/open-props/colors.min.css']
 });
