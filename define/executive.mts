@@ -31,8 +31,16 @@ const visualHints: VisualHints<ExecutiveProps> = {
                         translate: -4,
                     }
                 }
-            }
+            },
+        },
+        vicePresident: {
+            name: 'Vice President',
+            tagName: 'cotus-vice-president',
+            ssrPath: './cotus-vice-president.html',
         }
+    },
+    fieldSets: {
+        Elected: ['president', 'vicePresident'],
     },
     stylePaths: [
         '/style/common.css',

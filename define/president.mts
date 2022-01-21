@@ -13,6 +13,7 @@ const beDefinitiveProps: def<PresidentProps, {}> = {
             name: 'Joe Biden',
             party: 'Democrat',
         }
+
     },
 };
 
@@ -20,6 +21,10 @@ const visualHints: VisualHints<PresidentProps> = {
     stylePaths: [
         '/style/common.css'
     ],
+    fieldSets: {
+        'Summary': ['name', 'party'],
+        'Metrics': ['impeachmentCount'],
+    }
 };
 
 const innerHTML = BaseScaffoldGenerator.generateFrom(beDefinitiveProps, visualHints).html;

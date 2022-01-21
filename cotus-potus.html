@@ -3,8 +3,8 @@
     <!---->
     <template shadowroot="open">
         <template be-active>
-            <script data-version=0.0.3 id="be-importing/be-importing.js"></script>
-            <script data-version=latest id="be-definitive/be-definitive.js" data-when=be-importing></script>
+            <script data-version=0.0.4 id="be-importing/be-importing.js"></script>
+            <script data-version=0.0.27 id="be-definitive/be-definitive.js" data-when=be-importing></script>
             
             
         </template>
@@ -26,22 +26,9 @@
 <form>
 
     <fieldset>
-        <legend>Unclassified</legend>
+        <legend>Summary</legend>
         <table>
             
-<tr part="field-container field-container-impeachmentCount" class="field-container field-container-impeachmentCount"> 
-    
-        <td>
-            <label part="label label-impeachmentCount" class=label-impeachmentCount for=impeachmentCount>impeachmentCount:</label>
-        </td>
-        <td>
-
-            <input  id=impeachmentCount itemprop=impeachmentCount type=number value="0" be-noticed='{"input":{"prop":"impeachmentCount","vft":"value","parseValAs":"int"}}'be-observant='{"value":".impeachmentCount"}' >
-            
-        </td>
-    
-</tr>
-
 <tr part="field-container field-container-name" class="field-container field-container-name"> 
     
         <td>
@@ -72,11 +59,32 @@
         
     </fieldset>
     
+    <fieldset>
+        <legend>Metrics</legend>
+        <table>
+            
+<tr part="field-container field-container-impeachmentCount" class="field-container field-container-impeachmentCount"> 
+    
+        <td>
+            <label part="label label-impeachmentCount" class=label-impeachmentCount for=impeachmentCount>impeachmentCount:</label>
+        </td>
+        <td>
+
+            <input  id=impeachmentCount itemprop=impeachmentCount type=number value="0" be-noticed='{"input":{"prop":"impeachmentCount","vft":"value","parseValAs":"int"}}'be-observant='{"value":".impeachmentCount"}' >
+            
+        </td>
+    
+</tr>
+
+        </table>
+        
+    </fieldset>
+    
 </form>
 <template be-active>
-    <script data-version=0.0.34 id=be-loaded/be-loaded.js data-when=be-importing ></script>
+    <script data-version=0.0.35 id=be-loaded/be-loaded.js data-when=be-importing ></script>
     <script data-version=0.0.81 id=be-observant/be-observant.js data-when=be-loaded ></script>
-    <script data-version=0.0.45 id=be-noticed/be-noticed.js data-when=be-observant ></script>
+    <script data-version=0.0.46 id=be-noticed/be-noticed.js data-when=be-observant ></script>
 </template>
 <be-hive></be-hive>
 
@@ -86,7 +94,7 @@
 <script type=module>
     if(customElements.get('be-active') === undefined){
         import('be-active/be-active.js').catch(err => {
-            import('https://esm.run/be-active@0.0.15/be-active.js');
+            import('https://esm.run/be-active@0.0.16/be-active.js');
         });
     }
 </script>

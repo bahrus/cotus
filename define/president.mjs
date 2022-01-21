@@ -15,6 +15,10 @@ const visualHints = {
     stylePaths: [
         '/style/common.css'
     ],
+    fieldSets: {
+        'Summary': ['name', 'party'],
+        'Metrics': ['impeachmentCount'],
+    }
 };
 const innerHTML = BaseScaffoldGenerator.generateFrom(beDefinitiveProps, visualHints).html;
 define({
