@@ -35,8 +35,8 @@ const visualHints: VisualHints<CongressProps, CongressActions> = {
             mayItBe: {
                 beTransactional: {
                     noOfPresidentialImpeachments: 'union.congress.house.noOfPresidentialImpeachments',
-                }
-                
+                },
+                beConsensualMember: true
             }
 
         },
@@ -48,16 +48,16 @@ const visualHints: VisualHints<CongressProps, CongressActions> = {
                 minHeight: '250px',
                 minWidth: '425px',
                 display: 'flex',            
+            },
+            mayItBe: {
+                beConsensualMember: true
             }
         },
         inSession: {
             name: 'In Session',
             mayItBe: {
                 beConsensual: {
-                    elementSelector: '[is-importing][is-definitive][is-transactional]', //TODO:  this is a hack
-                    onStateSelector: '[in-session]',
-                    offStateSelector: ':not([in-session])',
-                    prop: 'inSession',
+                    memberProp: 'inSession',
                 }
             }
         }
@@ -79,7 +79,7 @@ define({
     beDefinitiveProps,
     encodeAndWrite: console.log,
     dependencies: [
-        'be-consensual@0.0.3/be-consensual.js',
+        'be-consensual@0.0.7/be-consensual.js',
         'be-transactional@0.0.1/be-transactional.js',
     ],
     globalStylePaths: ['https://unpkg.com/open-props/colors.min.css']

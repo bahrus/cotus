@@ -16,6 +16,16 @@ const visualHints = {
                 minHeight: '200px',
                 minWidth: '425px',
                 display: 'flex',
+            },
+            mayItBe: {
+                beObservant: {
+                    impeachmentCount: {
+                        observeAppHistory: true,
+                        on: 'currentchange',
+                        vft: 'current.getState|.union.congress.house.noOfPresidentialImpeachments',
+                        translate: -4,
+                    }
+                }
             }
         }
     },
