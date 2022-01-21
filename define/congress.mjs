@@ -51,6 +51,7 @@ const visualHints = {
             name: 'In Session',
             mayItBe: {
                 beConsensual: {
+                    selfProp: 'checked',
                     memberProp: 'inSession',
                 }
             }
@@ -71,8 +72,8 @@ define({
     beDefinitiveProps,
     encodeAndWrite: console.log,
     dependencies: [
-        'be-consensual@0.0.7/be-consensual.js',
-        'be-transactional@0.0.1/be-transactional.js',
+        'be-consensual@0.0.8/be-consensual.js',
+        'be-transactional@0.0.2/be-transactional.js',
     ],
     globalStylePaths: ['https://unpkg.com/open-props/colors.min.css']
 });

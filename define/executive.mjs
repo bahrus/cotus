@@ -20,7 +20,7 @@ const visualHints = {
             mayItBe: {
                 beObservant: {
                     impeachmentCount: {
-                        observeAppHistory: true,
+                        observeWinObj: 'appHistory',
                         on: 'currentchange',
                         vft: 'current.getState|.union.congress.house.noOfPresidentialImpeachments',
                         translate: -4,

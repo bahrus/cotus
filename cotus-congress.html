@@ -1,13 +1,13 @@
 
-<cotus-congress t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-congress","propDefaults":{"inSession":false},"actions":{}},"scriptPath":"./act/congress.js","superclass":"Congress","scriptRef":"a_1642754157119"}'>
+<cotus-congress t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-congress","propDefaults":{"inSession":false},"actions":{}},"scriptPath":"./act/congress.js","superclass":"Congress","scriptRef":"a_1642765131149"}'>
     <!---->
     <template shadowroot="open">
         <template be-active>
             <script data-version=0.0.3 id="be-importing/be-importing.js"></script>
             <script data-version=latest id="be-definitive/be-definitive.js" data-when=be-importing></script>
 <script data-version=0.0.7 data-when=be-importing id="be-exportable/be-exportable.js"></script>
-            <script data-when=be-importing id="be-consensual@0.0.7/be-consensual.js"></script>
-<script data-when=be-importing id="be-transactional@0.0.1/be-transactional.js"></script>
+            <script data-when=be-importing id="be-consensual@0.0.8/be-consensual.js"></script>
+<script data-when=be-importing id="be-transactional@0.0.2/be-transactional.js"></script>
             <link rel="stylesheet" href="https://unpkg.com/open-props/colors.min.css">
         </template>
         
@@ -72,7 +72,7 @@
         </td>
         <td>
 
-            <input  id=inSession itemprop=inSession type=checkbox value="false" be-noticed='{"input":{"prop":"inSession","vft":"checked","parseValAs":"string"}}'be-observant='{"checked":".inSession"}'  be-consensual='{"memberProp":"inSession"}'>
+            <input  id=inSession itemprop=inSession type=checkbox value="false" be-noticed='{"input":{"prop":"inSession","vft":"checked","parseValAs":"string"}}'be-observant='{"checked":".inSession"}'  be-consensual='{"selfProp":"checked","memberProp":"inSession"}'>
             
         </td>
     
@@ -85,14 +85,14 @@
 </form>
 <template be-active>
     <script data-version=0.0.34 id=be-loaded/be-loaded.js data-when=be-importing ></script>
-    <script data-version=0.0.80 id=be-observant/be-observant.js data-when=be-loaded ></script>
+    <script data-version=0.0.81 id=be-observant/be-observant.js data-when=be-loaded ></script>
     <script data-version=0.0.45 id=be-noticed/be-noticed.js data-when=be-observant ></script>
 </template>
 <be-hive></be-hive>
 
     </template>
 </cotus-congress>
-<script id=a_1642754157119 nomodule be-exportable src="./act/congress.js"></script>
+<script id=a_1642765131149 nomodule be-exportable src="./act/congress.js"></script>
 <script type=module>
     if(customElements.get('be-active') === undefined){
         import('be-active/be-active.js').catch(err => {
