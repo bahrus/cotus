@@ -16,7 +16,17 @@ const beDefinitiveProps: def<VicePresidentProps, {}> = {
     },
 };
 
-const innerHTML = BaseScaffoldGenerator.generateFrom(beDefinitiveProps).html;
+const visualHints: VisualHints<VicePresidentProps> = {
+    stylePaths: [
+        '/style/common.css'
+    ],
+    fieldSets: {
+        'Summary': ['name', 'party'],
+
+    }
+};
+
+const innerHTML = BaseScaffoldGenerator.generateFrom(beDefinitiveProps, visualHints).html;
 
 define({
     innerHTML,
