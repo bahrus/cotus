@@ -1,0 +1,74 @@
+
+<cotus-vice-president t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-vice-president","propDefaults":{"name":"Kamala Harris","party":"Democrat"}}}'>
+    <!---->
+    <template shadowroot="open">
+        <template be-active>
+            <script data-version=0.0.4 id="be-importing/be-importing.js"></script>
+            <script data-version=0.0.27 id="be-definitive/be-definitive.js" data-when=be-importing></script>
+            
+            
+        </template>
+        
+
+<style>
+    :host{
+        display: block;
+    }
+</style>
+
+        
+<form>
+
+    <fieldset>
+        <legend>Unclassified</legend>
+        <table>
+            
+<tr part="field-container field-container-name" class="field-container field-container-name"> 
+    
+        <td>
+            <label part="label label-name" class=label-name for=name>name:</label>
+        </td>
+        <td>
+
+            <input  id=name itemprop=name type=text value="Kamala Harris" be-noticed='{"input":{"prop":"name","vft":"value","parseValAs":"string"}}'be-observant='{"value":".name"}' >
+            
+        </td>
+    
+</tr>
+
+<tr part="field-container field-container-party" class="field-container field-container-party"> 
+    
+        <td>
+            <label part="label label-party" class=label-party for=party>party:</label>
+        </td>
+        <td>
+
+            <input  id=party itemprop=party type=text value="Democrat" be-noticed='{"input":{"prop":"party","vft":"value","parseValAs":"string"}}'be-observant='{"value":".party"}' >
+            
+        </td>
+    
+</tr>
+
+        </table>
+        
+    </fieldset>
+    
+</form>
+<template be-active>
+    <script data-version=0.0.35 id=be-loaded/be-loaded.js data-when=be-importing ></script>
+    <script data-version=0.0.81 id=be-observant/be-observant.js data-when=be-loaded ></script>
+    <script data-version=0.0.46 id=be-noticed/be-noticed.js data-when=be-observant ></script>
+</template>
+<be-hive></be-hive>
+
+    </template>
+</cotus-vice-president>
+
+<script type=module>
+    if(customElements.get('be-active') === undefined){
+        import('be-active/be-active.js').catch(err => {
+            import('https://esm.run/be-active@0.0.16/be-active.js');
+        });
+    }
+</script>
+

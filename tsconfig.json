@@ -12,7 +12,7 @@
 		"define/house.mts",
 		"define/congress.mts",
 		"define/president.mts",
-		"define/vicePresident.mts",
+		"define/vice-president.mts",
 		"define/executive.mts",
 		"define/union.mts",
 		"act/congress.ts",

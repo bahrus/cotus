@@ -66,7 +66,8 @@ export interface PresidentProps{
 }
 
 export interface VicePresidentProps{
-
+    name: string;
+    party: string;
 }
 
 export interface CabinetProps{
