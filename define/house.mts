@@ -15,7 +15,8 @@ const beDefinitiveProps: def<HouseProps, HouseActions> = {
             noOfIndependents: 1,
             noOfPresidentialImpeachments: 4,
             inSession: false,
-            termNumber: 117
+            termNumber: 117,
+            members: [],
         },
         propInfo:{
             inSession:{
@@ -50,6 +51,21 @@ const visualHints: VisualHints<HouseProps, HouseActions> = {
             max: 117,
             min: 102,
         }
+    },
+    mayItBe: {
+        beReformable: {
+            action: 'https://api.propublica.org/',
+            path: ['congress/v1/', 'termNumber', '/house/members.json'],
+            propKey: 'members',
+            autoSubmit: true,
+            as: 'json',
+            init:{
+                method: 'GET',
+                headers: {
+                    'X-API-Key': 'Vgjgcs9XxLz7seo4eOzTJenhZp6JajYu1MRrjbFS',
+                }
+            }
+        }
     }
 };
 
@@ -59,5 +75,8 @@ define({
     innerHTML,
     mode,
     beDefinitiveProps,
+    dependencies: [
+        'be-reformable@0.0.25/be-reformable.js',
+    ],
     encodeAndWrite: console.log,
 });

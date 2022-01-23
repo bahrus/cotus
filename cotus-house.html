@@ -1,12 +1,12 @@
 
-<cotus-house t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-house","propDefaults":{"noOfDemocrats":217,"noOfRepublicans":217,"noOfIndependents":1,"noOfPresidentialImpeachments":4,"inSession":false,"termNumber":117},"propInfo":{"inSession":{"notify":{"reflect":{"asAttr":true}}}}},"scriptPath":"./act/house.js","superclass":"House","scriptRef":"a_1642960907581"}'>
+<cotus-house t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-house","propDefaults":{"noOfDemocrats":217,"noOfRepublicans":217,"noOfIndependents":1,"noOfPresidentialImpeachments":4,"inSession":false,"termNumber":117,"members":[]},"propInfo":{"inSession":{"notify":{"reflect":{"asAttr":true}}}}},"scriptPath":"./act/house.js","superclass":"House","scriptRef":"a_1642965925169"}'>
     <!---->
     <template shadowroot="open">
         <template be-active>
             <script data-version=0.0.4 id="be-importing/be-importing.js"></script>
             <script data-version=0.0.27 id="be-definitive/be-definitive.js" data-when=be-importing></script>
 <script data-version=0.0.8 data-when=be-importing id="be-exportable/be-exportable.js"></script>
-            
+            <script data-when=be-importing id="be-reformable@0.0.25/be-reformable.js"></script>
             
         </template>
         
@@ -24,7 +24,7 @@
 </style>
 
         
-<form>
+<form be-reformable='{"action":"https://api.propublica.org/","path":["congress/v1/","termNumber","/house/members.json"],"propKey":"members","autoSubmit":true,"as":"json","init":{"method":"GET","headers":{"X-API-Key":"Vgjgcs9XxLz7seo4eOzTJenhZp6JajYu1MRrjbFS"}}}'>
 
     <fieldset>
         <legend>Party Breakdown</legend>
@@ -133,6 +133,27 @@
         
     </fieldset>
     
+    <fieldset>
+        <legend>Unclassified</legend>
+        <table>
+            
+<tr part="field-container field-container-members" class="field-container field-container-members"> 
+    
+        <td>
+            <label part="label label-members" class=label-members for=members>members:</label>
+        </td>
+        <td>
+
+            <input   id=members itemprop=members type=text value="" be-noticed='{"input":{"prop":"members","vft":"value","parseValAs":"string"}}'be-observant='{"value":".members"}' >
+            
+        </td>
+    
+</tr>
+
+        </table>
+        
+    </fieldset>
+    
 </form>
 <template be-active>
     <script data-version=0.0.35 id=be-loaded/be-loaded.js data-when=be-importing ></script>
@@ -143,7 +164,7 @@
 
     </template>
 </cotus-house>
-<script id=a_1642960907581 nomodule be-exportable src="./act/house.js"></script>
+<script id=a_1642965925169 nomodule be-exportable src="./act/house.js"></script>
 <script type=module>
     if(customElements.get('be-active') === undefined){
         import('be-active/be-active.js').catch(err => {
