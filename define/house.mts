@@ -15,6 +15,7 @@ const beDefinitiveProps: def<HouseProps, HouseActions> = {
             noOfIndependents: 1,
             noOfPresidentialImpeachments: 4,
             inSession: false,
+            termNumber: 117
         },
         propInfo:{
             inSession:{
@@ -33,7 +34,7 @@ const beDefinitiveProps: def<HouseProps, HouseActions> = {
 const visualHints: VisualHints<HouseProps, HouseActions> = {
     fieldSets: {
         'Party Breakdown': ['noOfDemocrats', 'noOfRepublicans', 'noOfIndependents'],
-        'Status': ['inSession', 'noOfPresidentialImpeachments'],
+        'Status': ['inSession', 'noOfPresidentialImpeachments', 'termNumber'],
         'Actions': ['impeachPresident'],
     },
     stylePaths: [
@@ -42,6 +43,12 @@ const visualHints: VisualHints<HouseProps, HouseActions> = {
     actionPresentationMap:{
         impeachPresident:{
             name: 'Impeach President',
+        }
+    },
+    propPresentationMap:{
+        'termNumber':{
+            max: 117,
+            min: 102,
         }
     }
 };

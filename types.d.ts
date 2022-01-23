@@ -93,6 +93,7 @@ export interface HouseProps extends PartyAffiliation, Status{
     houseSpeaker: string;
     majorityWhip: string;
     noOfPresidentialImpeachments: number;
+    termNumber: number;
 }
 
 export interface HouseActions extends LegislativeBranchActions{

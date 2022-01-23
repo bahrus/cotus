@@ -1,5 +1,5 @@
 
-<cotus-house t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-house","propDefaults":{"noOfDemocrats":217,"noOfRepublicans":217,"noOfIndependents":1,"noOfPresidentialImpeachments":4,"inSession":false},"propInfo":{"inSession":{"notify":{"reflect":{"asAttr":true}}}}},"scriptPath":"./act/house.js","superclass":"House","scriptRef":"a_1642811299213"}'>
+<cotus-house t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-house","propDefaults":{"noOfDemocrats":217,"noOfRepublicans":217,"noOfIndependents":1,"noOfPresidentialImpeachments":4,"inSession":false,"termNumber":117},"propInfo":{"inSession":{"notify":{"reflect":{"asAttr":true}}}}},"scriptPath":"./act/house.js","superclass":"House","scriptRef":"a_1642960907581"}'>
     <!---->
     <template shadowroot="open">
         <template be-active>
@@ -37,7 +37,7 @@
         </td>
         <td>
 
-            <input  id=noOfDemocrats itemprop=noOfDemocrats type=number value="217" be-noticed='{"input":{"prop":"noOfDemocrats","vft":"value","parseValAs":"int"}}'be-observant='{"value":".noOfDemocrats"}' >
+            <input   id=noOfDemocrats itemprop=noOfDemocrats type=number value="217" be-noticed='{"input":{"prop":"noOfDemocrats","vft":"value","parseValAs":"int"}}'be-observant='{"value":".noOfDemocrats"}' >
             
         </td>
     
@@ -50,7 +50,7 @@
         </td>
         <td>
 
-            <input  id=noOfRepublicans itemprop=noOfRepublicans type=number value="217" be-noticed='{"input":{"prop":"noOfRepublicans","vft":"value","parseValAs":"int"}}'be-observant='{"value":".noOfRepublicans"}' >
+            <input   id=noOfRepublicans itemprop=noOfRepublicans type=number value="217" be-noticed='{"input":{"prop":"noOfRepublicans","vft":"value","parseValAs":"int"}}'be-observant='{"value":".noOfRepublicans"}' >
             
         </td>
     
@@ -63,7 +63,7 @@
         </td>
         <td>
 
-            <input  id=noOfIndependents itemprop=noOfIndependents type=number value="1" be-noticed='{"input":{"prop":"noOfIndependents","vft":"value","parseValAs":"int"}}'be-observant='{"value":".noOfIndependents"}' >
+            <input   id=noOfIndependents itemprop=noOfIndependents type=number value="1" be-noticed='{"input":{"prop":"noOfIndependents","vft":"value","parseValAs":"int"}}'be-observant='{"value":".noOfIndependents"}' >
             
         </td>
     
@@ -84,7 +84,7 @@
         </td>
         <td>
 
-            <input  id=inSession itemprop=inSession type=checkbox value="false" be-noticed='{"input":{"prop":"inSession","vft":"checked","parseValAs":"string"}}'be-observant='{"checked":".inSession"}' >
+            <input   id=inSession itemprop=inSession type=checkbox value="false" be-noticed='{"input":{"prop":"inSession","vft":"checked","parseValAs":"string"}}'be-observant='{"checked":".inSession"}' >
             
         </td>
     
@@ -97,7 +97,20 @@
         </td>
         <td>
 
-            <input  id=noOfPresidentialImpeachments itemprop=noOfPresidentialImpeachments type=number value="4" be-noticed='{"input":{"prop":"noOfPresidentialImpeachments","vft":"value","parseValAs":"int"}}'be-observant='{"value":".noOfPresidentialImpeachments"}' >
+            <input   id=noOfPresidentialImpeachments itemprop=noOfPresidentialImpeachments type=number value="4" be-noticed='{"input":{"prop":"noOfPresidentialImpeachments","vft":"value","parseValAs":"int"}}'be-observant='{"value":".noOfPresidentialImpeachments"}' >
+            
+        </td>
+    
+</tr>
+
+<tr part="field-container field-container-termNumber" class="field-container field-container-termNumber"> 
+    
+        <td>
+            <label part="label label-termNumber" class=label-termNumber for=termNumber>termNumber:</label>
+        </td>
+        <td>
+
+            <input max='117' min='102'  id=termNumber itemprop=termNumber type=number value="117" be-noticed='{"input":{"prop":"termNumber","vft":"value","parseValAs":"int"}}'be-observant='{"value":".termNumber"}' >
             
         </td>
     
@@ -130,7 +143,7 @@
 
     </template>
 </cotus-house>
-<script id=a_1642811299213 nomodule be-exportable src="./act/house.js"></script>
+<script id=a_1642960907581 nomodule be-exportable src="./act/house.js"></script>
 <script type=module>
     if(customElements.get('be-active') === undefined){
         import('be-active/be-active.js').catch(err => {
