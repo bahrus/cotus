@@ -68,6 +68,7 @@ const visualHints: VisualHints<HouseProps, HouseActions> = {
             action: 'https://api.propublica.org/',
             path: ['congress/v1/', 'termNumber', '/house/members.json'],
             propKey: 'members',
+            fetchResultPath: ['results', '0', 'members'],
             autoSubmit: true,
             as: 'json',
             init:{
@@ -87,7 +88,7 @@ define({
     mode,
     beDefinitiveProps,
     dependencies: [
-        'be-reformable@0.0.25/be-reformable.js',
+        'be-reformable@0.0.26/be-reformable.js',
     ],
     encodeAndWrite: console.log,
 });
