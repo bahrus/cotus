@@ -1,5 +1,5 @@
 
-<cotus-house t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-house","propDefaults":{"noOfDemocrats":217,"noOfRepublicans":217,"noOfIndependents":1,"noOfPresidentialImpeachments":4,"inSession":false,"termNumber":117,"members":[]},"propInfo":{"inSession":{"notify":{"reflect":{"asAttr":true}}}}},"scriptPath":"./act/house.js","superclass":"House","scriptRef":"a_1642965925169"}'>
+<cotus-house t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-house","propDefaults":{"noOfDemocrats":217,"noOfRepublicans":217,"noOfIndependents":1,"noOfPresidentialImpeachments":4,"inSession":false,"termNumber":117,"members":[]},"propInfo":{"inSession":{"notify":{"reflect":{"asAttr":true}}}}},"scriptPath":"./act/house.js","superclass":"House","scriptRef":"a_1642966771144"}'>
     <!---->
     <template shadowroot="open">
         <template be-active>
@@ -139,13 +139,13 @@
             
 <tr part="field-container field-container-members" class="field-container field-container-members"> 
     
-        <td>
-            <label part="label label-members" class=label-members for=members>members:</label>
-        </td>
-        <td>
+        <td colspan=2>
+            <fieldset>
+                <legend>Members</legend>
+                
+        <xtal-editor   be-observant='{"value":".members","key":["members"]}'  id=members  be-importing=xtal-editor/xtal-editor.html itemprop=members></xtal-editor>
 
-            <input   id=members itemprop=members type=text value="" be-noticed='{"input":{"prop":"members","vft":"value","parseValAs":"string"}}'be-observant='{"value":".members"}' >
-            
+            </fieldset>
         </td>
     
 </tr>
@@ -164,7 +164,7 @@
 
     </template>
 </cotus-house>
-<script id=a_1642965925169 nomodule be-exportable src="./act/house.js"></script>
+<script id=a_1642966771144 nomodule be-exportable src="./act/house.js"></script>
 <script type=module>
     if(customElements.get('be-active') === undefined){
         import('be-active/be-active.js').catch(err => {

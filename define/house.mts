@@ -47,9 +47,20 @@ const visualHints: VisualHints<HouseProps, HouseActions> = {
         }
     },
     propPresentationMap:{
-        'termNumber':{
+        termNumber:{
             max: 117,
             min: 102,
+        },
+        members:{
+            tagName: 'xtal-editor',
+            ssrPath: 'xtal-editor/xtal-editor.html',
+            name: 'Members',
+            mayItBe: {
+                beObservant: {
+                    value: '.members',
+                    key: ['members'],
+                }
+            }
         }
     },
     mayItBe: {
