@@ -13,6 +13,8 @@ const beDefinitiveProps: def<SenateProps, SenateActions> = {
             noOfRepublicans: 49,
             noOfIndependents: 2,
             inSession: false,
+            termNumber: 117,
+            members: [],
         },
         propInfo:{
             inSession:{
@@ -34,6 +36,39 @@ const visualHints: VisualHints<SenateProps, SenateActions> = {
     stylePaths: [
         '/style/common.css'
     ],
+    propPresentationMap:{
+        termNumber:{
+            min:80,
+            max:117,
+        },
+        members:{
+            tagName: 'xtal-editor',
+            ssrPath: 'xtal-editor/xtal-editor.html',
+            name: 'Members',
+            mayItBe: {
+                beObservant: {
+                    value: '.members',
+                    key: ['members'],
+                }
+            }
+        }
+    },
+    mayItBe: {
+        beReformable: {
+            action: 'https://api.propublica.org/',
+            path: ['congress/v1/', 'termNumber', '/senate/members.json'],
+            propKey: 'members',
+            fetchResultPath: ['results', '0', 'members'],
+            autoSubmit: true,
+            as: 'json',
+            init:{
+                method: 'GET',
+                headers: {
+                    'X-API-Key': 'Vgjgcs9XxLz7seo4eOzTJenhZp6JajYu1MRrjbFS',
+                }
+            }
+        }
+    }
 };
 
 const innerHTML = BaseScaffoldGenerator.generateFrom(beDefinitiveProps, visualHints).html;
@@ -42,6 +77,9 @@ define({
     innerHTML,
     mode,
     beDefinitiveProps,
+    dependencies: [
+        'be-reformable@0.0.27/be-reformable.js',
+    ],
     encodeAndWrite: console.log,
 });
 

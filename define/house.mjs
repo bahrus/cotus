@@ -42,8 +42,8 @@ const visualHints = {
     },
     propPresentationMap: {
         termNumber: {
-            max: 117,
             min: 102,
+            max: 117,
         },
         members: {
             tagName: 'xtal-editor',
@@ -83,4 +83,5 @@ define({
         'be-reformable@0.0.27/be-reformable.js',
     ],
     encodeAndWrite: console.log,
+    globalStylePaths: ['https://unpkg.com/open-props/colors.min.css']
 });
