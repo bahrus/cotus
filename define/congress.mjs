@@ -72,9 +72,9 @@ define({
     beDefinitiveProps,
     encodeAndWrite: console.log,
     dependencies: [
-        'be-consensual@0.0.9/be-consensual.js',
-        'be-transactional@0.0.2/be-transactional.js',
-        'be-reformable@0.0.23/be-reformable.js',
+        'be-consensual@0.0.11/be-consensual.js',
+        'be-transactional@0.0.4/be-transactional.js',
+        'be-reformable@0.0.27/be-reformable.js',
     ],
     globalStylePaths: ['https://unpkg.com/open-props/colors.min.css']
 });

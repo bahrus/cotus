@@ -28,9 +28,9 @@
     "build-union.html": "define/union.mjs"
   },
   "dependencies": {
-    "may-it-be": "0.0.99",
-    "be-consensual": "0.0.9",
-    "be-transactional": "0.0.2"
+    "may-it-be": "0.0.100",
+    "be-consensual": "0.0.11",
+    "be-transactional": "0.0.4"
   },
   "devDependencies": {
     "@custom-elements-manifest/analyzer": "0.5.7",

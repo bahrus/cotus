@@ -88,7 +88,7 @@ define({
     mode,
     beDefinitiveProps,
     dependencies: [
-        'be-reformable@0.0.26/be-reformable.js',
+        'be-reformable@0.0.27/be-reformable.js',
     ],
     encodeAndWrite: console.log,
 });
