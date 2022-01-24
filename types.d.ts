@@ -80,19 +80,22 @@ export interface PartyAffiliation{
     noOfIndependents: number;
 }
 
+export interface CongressionalChamber extends PartyAffiliation{
+    members: CongressPersonProps[];
+}
 
-export interface SenateProps extends PartyAffiliation, Status{
+
+export interface SenateProps extends CongressionalChamber, Status{
     majorityLeader: string;
     minorityLeader: string;
     inSesson: boolean;
-    members: CongressPersonProps[];
 }
 
 export interface SenateActions extends LegislativeBranchActions{
     
 }
 
-export interface HouseProps extends PartyAffiliation, Status{
+export interface HouseProps extends CongressionalChamber, Status{
     houseSpeaker: string;
     majorityWhip: string;
     noOfPresidentialImpeachments: number;
