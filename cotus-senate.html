@@ -1,5 +1,5 @@
 
-<cotus-senate t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-senate","propDefaults":{"noOfDemocrats":0,"noOfRepublicans":0,"noOfIndependents":0,"inSession":false,"termNumber":117,"members":[]},"propInfo":{"inSession":{"notify":{"reflect":{"asAttr":true}}}},"actions":{"calculateBreakdowns":{"ifAllOf":["members","calculateBreakdowns"]}}},"scriptPath":"./act/house.js","superclass":"House","scriptRef":"a_1643066766749"}'>
+<cotus-senate t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-senate","propDefaults":{"noOfDemocrats":0,"noOfRepublicans":0,"noOfIndependents":0,"noOfMen":0,"noOfWomen":0,"noOfOther":0,"inSession":false,"termNumber":117,"members":[]},"propInfo":{"inSession":{"notify":{"reflect":{"asAttr":true}}}},"actions":{"calculateBreakdowns":{"ifAllOf":["members","calculateBreakdowns"]}}},"scriptPath":"./act/house.js","superclass":"House","scriptRef":"a_1643066930391"}'>
     <!---->
     <template shadowroot="open">
         <template be-active>
@@ -84,7 +84,7 @@
         </td>
         <td>
 
-            <input   id=noOfMen itemprop=noOfMen type=text value="" be-noticed='{"input":{"prop":"noOfMen","vft":"value","parseValAs":"string"}}'be-observant='{"value":".noOfMen"}' >
+            <input   id=noOfMen itemprop=noOfMen type=number value="0" be-noticed='{"input":{"prop":"noOfMen","vft":"value","parseValAs":"int"}}'be-observant='{"value":".noOfMen"}' >
             
         </td>
     
@@ -97,7 +97,7 @@
         </td>
         <td>
 
-            <input   id=noOfWomen itemprop=noOfWomen type=text value="" be-noticed='{"input":{"prop":"noOfWomen","vft":"value","parseValAs":"string"}}'be-observant='{"value":".noOfWomen"}' >
+            <input   id=noOfWomen itemprop=noOfWomen type=number value="0" be-noticed='{"input":{"prop":"noOfWomen","vft":"value","parseValAs":"int"}}'be-observant='{"value":".noOfWomen"}' >
             
         </td>
     
@@ -110,7 +110,7 @@
         </td>
         <td>
 
-            <input   id=noOfOther itemprop=noOfOther type=text value="" be-noticed='{"input":{"prop":"noOfOther","vft":"value","parseValAs":"string"}}'be-observant='{"value":".noOfOther"}' >
+            <input   id=noOfOther itemprop=noOfOther type=number value="0" be-noticed='{"input":{"prop":"noOfOther","vft":"value","parseValAs":"int"}}'be-observant='{"value":".noOfOther"}' >
             
         </td>
     
@@ -178,7 +178,7 @@
 
     </template>
 </cotus-senate>
-<script id=a_1643066766749 nomodule be-exportable src="./act/house.js"></script>
+<script id=a_1643066930391 nomodule be-exportable src="./act/house.js"></script>
 <script type=module>
     if(customElements.get('be-active') === undefined){
         import('be-active/be-active.js').catch(err => {
