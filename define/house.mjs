@@ -5,9 +5,9 @@ const beDefinitiveProps = {
     config: {
         tagName: 'cotus-house',
         propDefaults: {
-            noOfDemocrats: 217,
-            noOfRepublicans: 217,
-            noOfIndependents: 1,
+            noOfDemocrats: 0,
+            noOfRepublicans: 0,
+            noOfIndependents: 0,
             noOfPresidentialImpeachments: 4,
             inSession: false,
             termNumber: 117,
@@ -20,6 +20,11 @@ const beDefinitiveProps = {
                         asAttr: true,
                     }
                 }
+            }
+        },
+        actions: {
+            calculatePartyBreakdown: {
+                ifAllOf: ['members'],
             }
         }
     },

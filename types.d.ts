@@ -102,6 +102,7 @@ export interface HouseProps extends PartyAffiliation, Status{
 
 export interface HouseActions extends LegislativeBranchActions{
     impeachPresident(self: this): void;
+    calculatePartyBreakdown(self: this): Partial<HouseProps>
 }
 
 export interface ExecutiveProps{
