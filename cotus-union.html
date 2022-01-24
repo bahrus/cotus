@@ -3,8 +3,8 @@
     <!---->
     <template shadowroot="open">
         <template be-active>
-            <script data-version=0.0.4 id="be-importing/be-importing.js"></script>
-            <script data-version=0.0.27 id="be-definitive/be-definitive.js" data-when=be-importing></script>
+            <script data-version=0.0.5 id="be-importing/be-importing.js"></script>
+            <script data-version=0.0.28 id="be-definitive/be-definitive.js" data-when=be-importing></script>
             
             
         </template>
@@ -25,10 +25,7 @@
         
 <form >
 
-    <fieldset>
-        <legend>Unclassified</legend>
-        <table>
-            
+
 <tr part="field-container field-container-congress" class="field-container field-container-congress"> 
     
         <td colspan=2>
@@ -55,15 +52,11 @@
     
 </tr>
 
-        </table>
-        
-    </fieldset>
-    
 </form>
 <template be-active>
-    <script data-version=0.0.35 id=be-loaded/be-loaded.js data-when=be-importing ></script>
-    <script data-version=0.0.81 id=be-observant/be-observant.js data-when=be-loaded ></script>
-    <script data-version=0.0.46 id=be-noticed/be-noticed.js data-when=be-observant ></script>
+    <script data-version=0.0.36 id=be-loaded/be-loaded.js data-when=be-importing ></script>
+    <script data-version=0.0.88 id=be-observant/be-observant.js data-when=be-loaded ></script>
+    <script data-version=0.0.47 id=be-noticed/be-noticed.js data-when=be-observant ></script>
 </template>
 <be-hive></be-hive>
 
@@ -73,7 +66,7 @@
 <script type=module>
     if(customElements.get('be-active') === undefined){
         import('be-active/be-active.js').catch(err => {
-            import('https://esm.run/be-active@0.0.16/be-active.js');
+            import('https://esm.run/be-active@0.0.17/be-active.js');
         });
     }
 </script>
