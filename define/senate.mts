@@ -48,6 +48,15 @@ const visualHints: VisualHints<SenateProps, SenateActions> = {
             min:80,
             max:117,
         },
+        noOfDemocrats: {
+            name: 'Democrats',
+        },
+        noOfRepublicans: {
+            name: 'Republicans',
+        },
+        noOfIndependents: {
+            name: 'Independents',
+        },
         members:{
             tagName: 'xtal-editor',
             ssrPath: 'xtal-editor/xtal-editor.html',

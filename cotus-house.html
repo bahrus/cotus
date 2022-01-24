@@ -1,5 +1,5 @@
 
-<cotus-house t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-house","propDefaults":{"noOfDemocrats":0,"noOfRepublicans":0,"noOfIndependents":0,"noOfPresidentialImpeachments":4,"inSession":false,"termNumber":117,"members":[]},"propInfo":{"inSession":{"notify":{"reflect":{"asAttr":true}}}},"actions":{"calculatePartyBreakdown":{"ifAllOf":["members","calculatePartyBreakdown"]}}},"scriptPath":"./act/house.js","superclass":"House","scriptRef":"a_1643064353234"}'>
+<cotus-house t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-house","propDefaults":{"noOfDemocrats":0,"noOfRepublicans":0,"noOfIndependents":0,"noOfPresidentialImpeachments":4,"inSession":false,"termNumber":117,"members":[]},"propInfo":{"inSession":{"notify":{"reflect":{"asAttr":true}}}},"actions":{"calculatePartyBreakdown":{"ifAllOf":["members","calculatePartyBreakdown"]}}},"scriptPath":"./act/house.js","superclass":"House","scriptRef":"a_1643065468864"}'>
     <!---->
     <template shadowroot="open">
         <template be-active>
@@ -33,7 +33,7 @@
 <tr part="field-container field-container-noOfDemocrats" class="field-container field-container-noOfDemocrats"> 
     
         <td>
-            <label part="label label-noOfDemocrats" class=label-noOfDemocrats for=noOfDemocrats>noOfDemocrats:</label>
+            <label part="label label-noOfDemocrats" class=label-noOfDemocrats for=noOfDemocrats>Democrats:</label>
         </td>
         <td>
 
@@ -46,7 +46,7 @@
 <tr part="field-container field-container-noOfRepublicans" class="field-container field-container-noOfRepublicans"> 
     
         <td>
-            <label part="label label-noOfRepublicans" class=label-noOfRepublicans for=noOfRepublicans>noOfRepublicans:</label>
+            <label part="label label-noOfRepublicans" class=label-noOfRepublicans for=noOfRepublicans>Republicans:</label>
         </td>
         <td>
 
@@ -59,7 +59,7 @@
 <tr part="field-container field-container-noOfIndependents" class="field-container field-container-noOfIndependents"> 
     
         <td>
-            <label part="label label-noOfIndependents" class=label-noOfIndependents for=noOfIndependents>noOfIndependents:</label>
+            <label part="label label-noOfIndependents" class=label-noOfIndependents for=noOfIndependents>Independents:</label>
         </td>
         <td>
 
@@ -157,7 +157,7 @@
 
     </template>
 </cotus-house>
-<script id=a_1643064353234 nomodule be-exportable src="./act/house.js"></script>
+<script id=a_1643065468864 nomodule be-exportable src="./act/house.js"></script>
 <script type=module>
     if(customElements.get('be-active') === undefined){
         import('be-active/be-active.js').catch(err => {
