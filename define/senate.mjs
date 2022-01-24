@@ -26,7 +26,7 @@ const beDefinitiveProps = {
 const visualHints = {
     fieldSets: {
         'Party Breakdown': ['noOfDemocrats', 'noOfRepublicans', 'noOfIndependents'],
-        'Status': ['inSession'],
+        'Status': ['inSession', 'termNumber'],
     },
     stylePaths: [
         '/style/common.css'
