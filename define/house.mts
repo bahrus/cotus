@@ -12,6 +12,9 @@ const beDefinitiveProps: def<HouseProps, HouseActions> = {
             noOfDemocrats: 0,
             noOfRepublicans: 0,
             noOfIndependents: 0,
+            noOfMen: 0,
+            noOfWomen: 0,
+            noOfOther: 0,
             noOfPresidentialImpeachments: 4,
             inSession: false,
             termNumber: 117,
@@ -27,8 +30,8 @@ const beDefinitiveProps: def<HouseProps, HouseActions> = {
             }
         },
         actions:{
-            calculatePartyBreakdown: {
-                ifAllOf: ['members', 'calculatePartyBreakdown'],
+            calculateBreakdowns: {
+                ifAllOf: ['members', 'calculateBreakdowns'],
             }
         }
     },
@@ -39,6 +42,7 @@ const beDefinitiveProps: def<HouseProps, HouseActions> = {
 const visualHints: VisualHints<HouseProps, HouseActions> = {
     fieldSets: {
         'Party Breakdown': ['noOfDemocrats', 'noOfRepublicans', 'noOfIndependents'],
+        'Gender Breakdown': ['noOfMen', 'noOfWomen', 'noOfOther'],
         'Status': ['inSession', 'noOfPresidentialImpeachments', 'termNumber'],
         'Actions': ['impeachPresident'],
     },
@@ -63,6 +67,15 @@ const visualHints: VisualHints<HouseProps, HouseActions> = {
         },
         noOfIndependents: {
             name: 'Independents',
+        },
+        noOfMen:{
+            name: 'Men'
+        },
+        noOfWomen:{
+            name: 'Women'
+        },
+        noOfOther:{
+            name: 'Other'
         },
         members:{
             tagName: 'xtal-editor',

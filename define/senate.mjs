@@ -22,8 +22,8 @@ const beDefinitiveProps = {
             }
         },
         actions: {
-            calculatePartyBreakdown: {
-                ifAllOf: ['members', 'calculatePartyBreakdown'],
+            calculateBreakdowns: {
+                ifAllOf: ['members', 'calculateBreakdowns'],
             }
         }
     },
@@ -33,6 +33,7 @@ const beDefinitiveProps = {
 const visualHints = {
     fieldSets: {
         'Party Breakdown': ['noOfDemocrats', 'noOfRepublicans', 'noOfIndependents'],
+        'Gender Breakdown': ['noOfMen', 'noOfWomen', 'noOfOther'],
         'Status': ['inSession', 'termNumber'],
     },
     stylePaths: [
@@ -51,6 +52,15 @@ const visualHints = {
         },
         noOfIndependents: {
             name: 'Independents',
+        },
+        noOfMen: {
+            name: 'Men'
+        },
+        noOfWomen: {
+            name: 'Women'
+        },
+        noOfOther: {
+            name: 'Other'
         },
         members: {
             tagName: 'xtal-editor',

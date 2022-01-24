@@ -1,5 +1,5 @@
 
-<cotus-house t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-house","propDefaults":{"noOfDemocrats":0,"noOfRepublicans":0,"noOfIndependents":0,"noOfPresidentialImpeachments":4,"inSession":false,"termNumber":117,"members":[]},"propInfo":{"inSession":{"notify":{"reflect":{"asAttr":true}}}},"actions":{"calculatePartyBreakdown":{"ifAllOf":["members","calculatePartyBreakdown"]}}},"scriptPath":"./act/house.js","superclass":"House","scriptRef":"a_1643065468864"}'>
+<cotus-house t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-house","propDefaults":{"noOfDemocrats":0,"noOfRepublicans":0,"noOfIndependents":0,"noOfMen":0,"noOfWomen":0,"noOfOther":0,"noOfPresidentialImpeachments":4,"inSession":false,"termNumber":117,"members":[]},"propInfo":{"inSession":{"notify":{"reflect":{"asAttr":true}}}},"actions":{"calculateBreakdowns":{"ifAllOf":["members","calculateBreakdowns"]}}},"scriptPath":"./act/house.js","superclass":"House","scriptRef":"a_1643066723445"}'>
     <!---->
     <template shadowroot="open">
         <template be-active>
@@ -64,6 +64,53 @@
         <td>
 
             <input   id=noOfIndependents itemprop=noOfIndependents type=number value="0" be-noticed='{"input":{"prop":"noOfIndependents","vft":"value","parseValAs":"int"}}'be-observant='{"value":".noOfIndependents"}' >
+            
+        </td>
+    
+</tr>
+
+        </table>
+        
+    </fieldset>
+    
+    <fieldset>
+        <legend>Gender Breakdown</legend>
+        <table>
+            
+<tr part="field-container field-container-noOfMen" class="field-container field-container-noOfMen"> 
+    
+        <td>
+            <label part="label label-noOfMen" class=label-noOfMen for=noOfMen>Men:</label>
+        </td>
+        <td>
+
+            <input   id=noOfMen itemprop=noOfMen type=number value="0" be-noticed='{"input":{"prop":"noOfMen","vft":"value","parseValAs":"int"}}'be-observant='{"value":".noOfMen"}' >
+            
+        </td>
+    
+</tr>
+
+<tr part="field-container field-container-noOfWomen" class="field-container field-container-noOfWomen"> 
+    
+        <td>
+            <label part="label label-noOfWomen" class=label-noOfWomen for=noOfWomen>Women:</label>
+        </td>
+        <td>
+
+            <input   id=noOfWomen itemprop=noOfWomen type=number value="0" be-noticed='{"input":{"prop":"noOfWomen","vft":"value","parseValAs":"int"}}'be-observant='{"value":".noOfWomen"}' >
+            
+        </td>
+    
+</tr>
+
+<tr part="field-container field-container-noOfOther" class="field-container field-container-noOfOther"> 
+    
+        <td>
+            <label part="label label-noOfOther" class=label-noOfOther for=noOfOther>Other:</label>
+        </td>
+        <td>
+
+            <input   id=noOfOther itemprop=noOfOther type=number value="0" be-noticed='{"input":{"prop":"noOfOther","vft":"value","parseValAs":"int"}}'be-observant='{"value":".noOfOther"}' >
             
         </td>
     
@@ -157,7 +204,7 @@
 
     </template>
 </cotus-house>
-<script id=a_1643065468864 nomodule be-exportable src="./act/house.js"></script>
+<script id=a_1643066723445 nomodule be-exportable src="./act/house.js"></script>
 <script type=module>
     if(customElements.get('be-active') === undefined){
         import('be-active/be-active.js').catch(err => {

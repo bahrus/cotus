@@ -4,8 +4,8 @@ export class House extends HTMLElement {
         this.loadActions();
     }
     async loadActions() {
-        const { calculatePartyBreakdown } = await import('./membersAnalysis.js');
-        this.calculatePartyBreakdown = calculatePartyBreakdown;
+        const { calculateBreakdowns } = await import('./membersAnalysis.js');
+        this.calculateBreakdowns = calculateBreakdowns;
     }
     impeachPresident({}) {
         this.noOfPresidentialImpeachments++;

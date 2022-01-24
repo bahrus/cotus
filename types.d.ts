@@ -19,6 +19,12 @@ export interface Status{
 export interface LegislativeBranchActions{
     // passBill: (self: this) => void;
     // overrideVeto: (self: this) => void;
+    calculateBreakdowns: (chamber: LegislativeBranchProps) => Partial<LegislativeBranchProps>;
+}
+
+export interface LegislativeBranchProps extends PartyBreakdown, GenderBreakdown{
+    members: CongressPersonProps[];
+    calculateBreakdowns: (chamber: LegislativeBranchProps) => Partial<LegislativeBranchProps>;
 }
 
 export interface CongressActions extends LegislativeBranchActions{
@@ -74,39 +80,41 @@ export interface CongressPersonProps{
     votes_against_party_pct: number,
 }
 
-export interface PartyAffiliation{
+export interface PartyBreakdown{
     noOfRepublicans: number;
     noOfDemocrats: number;
     noOfIndependents: number;
 }
 
-export interface CongressionalChamber extends PartyAffiliation{
-    members: CongressPersonProps[];
+export interface GenderBreakdown{
+    noOfMen: number;
+    noOfWomen: number;
+    noOfOther: number;
 }
 
 
-export interface SenateProps extends CongressionalChamber, Status{
+
+
+export interface SenateProps extends LegislativeBranchProps, Status{
     majorityLeader: string;
     minorityLeader: string;
     inSesson: boolean;
-    calculatePartyBreakdown: (chamber: CongressionalChamber) => Partial<CongressionalChamber>;
+    
 }
 
 export interface SenateActions extends LegislativeBranchActions{
-    calculatePartyBreakdown: (chamber: CongressionalChamber) => Partial<CongressionalChamber>;
+
 }
 
-export interface HouseProps extends CongressionalChamber, Status{
+export interface HouseProps extends LegislativeBranchProps, Status{
     houseSpeaker: string;
     majorityWhip: string;
     noOfPresidentialImpeachments: number;
-    calculatePartyBreakdown: (chamber: CongressionalChamber) => Partial<CongressionalChamber>
     members: CongressPersonProps[];
 }
 
 export interface HouseActions extends LegislativeBranchActions{
     impeachPresident(self: this): void;
-    calculatePartyBreakdown: (chamber: CongressionalChamber) => Partial<CongressionalChamber>
 }
 
 export interface ExecutiveProps{
