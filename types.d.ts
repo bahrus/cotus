@@ -89,10 +89,11 @@ export interface SenateProps extends CongressionalChamber, Status{
     majorityLeader: string;
     minorityLeader: string;
     inSesson: boolean;
+    calculatePartyBreakdown: (chamber: CongressionalChamber) => Partial<CongressionalChamber>;
 }
 
 export interface SenateActions extends LegislativeBranchActions{
-    
+    calculatePartyBreakdown: (chamber: CongressionalChamber) => Partial<CongressionalChamber>;
 }
 
 export interface HouseProps extends CongressionalChamber, Status{

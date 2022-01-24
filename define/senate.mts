@@ -9,9 +9,9 @@ const beDefinitiveProps: def<SenateProps, SenateActions> = {
     config: {
         tagName: 'cotus-senate',
         propDefaults:{
-            noOfDemocrats: 49,
-            noOfRepublicans: 49,
-            noOfIndependents: 2,
+            noOfDemocrats: 0,
+            noOfRepublicans: 0,
+            noOfIndependents: 0,
             inSession: false,
             termNumber: 117,
             members: [],
@@ -24,8 +24,15 @@ const beDefinitiveProps: def<SenateProps, SenateActions> = {
                     }
                 }
             }
+        },
+        actions:{
+            calculatePartyBreakdown: {
+                ifAllOf: ['members', 'calculatePartyBreakdown'],
+            }
         }
-    }
+    },
+    scriptPath: './act/house.js',
+    superclass: 'House',
 };
 
 const visualHints: VisualHints<SenateProps, SenateActions> = {
