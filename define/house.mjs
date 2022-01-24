@@ -24,7 +24,7 @@ const beDefinitiveProps = {
         },
         actions: {
             calculatePartyBreakdown: {
-                ifAllOf: ['members'],
+                ifAllOf: ['members', 'calculatePartyBreakdown'],
             }
         }
     },

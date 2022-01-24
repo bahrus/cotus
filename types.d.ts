@@ -99,13 +99,13 @@ export interface HouseProps extends CongressionalChamber, Status{
     houseSpeaker: string;
     majorityWhip: string;
     noOfPresidentialImpeachments: number;
-    
+    calculatePartyBreakdown: (chamber: CongressionalChamber) => Partial<CongressionalChamber>
     members: CongressPersonProps[];
 }
 
 export interface HouseActions extends LegislativeBranchActions{
     impeachPresident(self: this): void;
-    calculatePartyBreakdown(self: this): Partial<HouseProps>
+    calculatePartyBreakdown: (chamber: CongressionalChamber) => Partial<CongressionalChamber>
 }
 
 export interface ExecutiveProps{

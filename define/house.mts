@@ -28,7 +28,7 @@ const beDefinitiveProps: def<HouseProps, HouseActions> = {
         },
         actions:{
             calculatePartyBreakdown: {
-                ifAllOf: ['members'],
+                ifAllOf: ['members', 'calculatePartyBreakdown'],
             }
         }
     },
