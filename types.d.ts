@@ -27,7 +27,7 @@ export interface LegislativeBranchProps extends PartyBreakdown, GenderBreakdown{
     calculateBreakdowns: (chamber: LegislativeBranchProps) => Partial<LegislativeBranchProps>;
 }
 
-export interface CongressActions extends LegislativeBranchActions{
+export interface CongressActions {
     onInSession(self: this): void;
 }
 
