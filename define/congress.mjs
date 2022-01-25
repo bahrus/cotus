@@ -73,7 +73,7 @@ define({
     encodeAndWrite: console.log,
     dependencies: [
         'be-consensual@0.0.11/be-consensual.js',
-        'be-transactional@0.0.4/be-transactional.js',
+        'be-transactional@0.0.5/be-transactional.js',
         'be-reformable@0.0.27/be-reformable.js',
     ],
     globalStylePaths: ['https://unpkg.com/open-props/colors.min.css']
