@@ -28,7 +28,7 @@
     "build-union.html": "define/union.mjs"
   },
   "dependencies": {
-    "may-it-be": "0.0.102",
+    "may-it-be": "0.0.103",
     "be-consensual": "0.0.11",
     "be-transactional": "0.0.4"
   },
