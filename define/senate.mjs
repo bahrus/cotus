@@ -67,7 +67,7 @@ const visualHints = {
         },
         members: {
             tagName: 'xtal-editor',
-            ssrPath: 'xtal-editor/xtal-editor.html',
+            ssrPath: 'xtal-editor@0.0.126/xtal-editor.html',
             name: 'Members',
             mayItBe: {
                 beObservant: {
