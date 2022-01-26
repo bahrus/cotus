@@ -12,6 +12,7 @@
     "build-potus.html": "node define/president.mjs -html > cotus-potus.html",
     "build-vice-president.html": "node define/vice-president.mjs -html > cotus-vice-president.html",
     "build-executive.html": "node define/executive.mjs -html > cotus-executive.html",
+    "build-judicial.html": "node define/judicial.mjs -html > cotus-judicial.html",
     "build-union.html": "node define/union.mjs -html > cotus-union.html",
     "watch": "npm-watch"
   },
@@ -25,6 +26,7 @@
     "build-potus.html": "define/president.mjs",
     "build-vice-president.html": "define/vice-president.mjs",
     "build-executive.html": "define/executive.mjs",
+    "build-judicial.html": "define/judicial.mjs",
     "build-union.html": "define/union.mjs"
   },
   "dependencies": {
