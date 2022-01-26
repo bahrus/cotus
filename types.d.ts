@@ -139,3 +139,11 @@ export interface VicePresidentProps{
 
 export interface CabinetProps{
 }
+
+export interface JudicialProps{
+
+}
+
+export interface JudicialActions{
+    
+}
