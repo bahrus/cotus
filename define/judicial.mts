@@ -12,6 +12,12 @@ const beDefinitiveProps: def<JudicialProps, JudicialActions> = {
 }
 
 const visualHints: VisualHints<JudicialProps, JudicialActions> = {
+    propPresentationMap: {
+        supremeCourt:{
+            tagName: 'cotus-supreme-court',
+            ssrPath: './cotus-supreme-court.html',
+        }
+    }
 };
 
 const innerHTML = BaseScaffoldGenerator.generateFrom(beDefinitiveProps, visualHints).html;

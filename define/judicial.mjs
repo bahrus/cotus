@@ -6,7 +6,14 @@ const beDefinitiveProps = {
         tagName: 'cotus-judicial',
     }
 };
-const visualHints = {};
+const visualHints = {
+    propPresentationMap: {
+        supremeCourt: {
+            tagName: 'cotus-supreme-court',
+            ssrPath: './cotus-supreme-court.html',
+        }
+    }
+};
 const innerHTML = BaseScaffoldGenerator.generateFrom(beDefinitiveProps, visualHints).html;
 define({
     innerHTML,

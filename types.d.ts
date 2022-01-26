@@ -142,9 +142,16 @@ export interface CabinetProps{
 }
 
 export interface JudicialProps{
-
+    supremeCourt: SupremeCourtProps & SupremeCourtActions;
 }
+
 
 export interface JudicialActions{
 
+}
+
+export interface SupremeCourtProps{
+}
+
+export interface SupremeCourtActions{
 }
