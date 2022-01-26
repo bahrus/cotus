@@ -28,6 +28,16 @@ const visualHints = {
                 display: 'flex',
             }
         },
+        judicial: {
+            name: 'Judicial',
+            tagName: 'cotus-judicial',
+            ssrPath: './cotus-judicial.html',
+            style: {
+                minHeight: '400px',
+                minWidth: '550px',
+                display: 'flex',
+            }
+        }
     },
     stylePaths: [
         '/style/common.css',

@@ -1,6 +1,7 @@
 export interface UnionProps {
     congress: CongressProps & CongressActions;
     executive: ExecutiveProps & ExecutiveActions;
+    judicial: JudicialProps & JudicialActions;
 }
 
 export interface UnionActions {
@@ -145,5 +146,5 @@ export interface JudicialProps{
 }
 
 export interface JudicialActions{
-    
+
 }
