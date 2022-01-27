@@ -6,10 +6,11 @@ const beDefinitiveProps = {
         tagName: 'cotus-scotus',
     }
 };
+//https://corslet.bahrus.workers.dev/?href=https%3A%2F%2Fwww.supremecourt.gov%2Fabout%2Fmembers_text.aspx&between=%3Cdiv+id%3D%22ctl00_ctl00_MainEditable_mainContent_RadEditor1%22%3E%3Cscript&ts=2022-01-27T12%3A43%3A08.593Z&wrapper=%3Cdiv%3E%7C%3C%2Fdiv%3E&ua=
 const visualHints = {
     mayItBe: {
         beReformable: {
-            action: 'https://www.supremecourt.gov/about/members_text.aspx',
+            action: 'https://corslet.bahrus.workers.dev/?href=https%3A%2F%2Fwww.supremecourt.gov%2Fabout%2Fmembers_text.aspx&between=%3Cdiv+id%3D%22ctl00_ctl00_MainEditable_mainContent_RadEditor1%22%3E%3Cscript&ts=2022-01-27T12%3A43%3A08.593Z&wrapper=%3Cdiv%3E%7C%3C%2Fdiv%3E&ua=',
             path: [],
             autoSubmit: true,
             as: 'text'
