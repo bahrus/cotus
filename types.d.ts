@@ -142,7 +142,7 @@ export interface CabinetProps{
 }
 
 export interface JudicialProps{
-    scotus: SupremeCourtProps & SupremeCourtActions;
+    scotus: ScotusProps & ScotusActions;
 }
 
 
@@ -150,8 +150,8 @@ export interface JudicialActions{
 
 }
 
-export interface SupremeCourtProps{
+export interface ScotusProps{
 }
 
-export interface SupremeCourtActions{
+export interface ScotusActions{
 }

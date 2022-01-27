@@ -1,0 +1,41 @@
+
+<cotus-scotus t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-scotus"}}'>
+    <!---->
+    <template shadowroot="open">
+        <template be-active>
+            <script data-version=0.0.5 id="be-importing/be-importing.js"></script>
+            <script data-version=0.0.30 id="be-definitive/be-definitive.js" data-when=be-importing></script>
+            <script data-when=be-importing id="be-reformable@0.0.27/be-reformable.js"></script>
+            <link rel="stylesheet" href="https://unpkg.com/open-props/colors.min.css">
+        </template>
+        
+
+<style>
+    :host{
+        display: block;
+    }
+</style>
+
+        
+<form be-reformable='{"action":"https://www.supremecourt.gov/about/members_text.aspx","path":[],"autoSubmit":true,"as":"text"}'>
+
+
+</form>
+<template be-active>
+    <script data-version=0.0.43 id=be-loaded/be-loaded.js data-when=be-importing ></script>
+    <script data-version=0.0.88 id=be-observant/be-observant.js data-when=be-loaded ></script>
+    <script data-version=0.0.47 id=be-noticed/be-noticed.js data-when=be-observant ></script>
+</template>
+<be-hive></be-hive>
+
+    </template>
+</cotus-scotus>
+
+<script type=module>
+    if(customElements.get('be-active') === undefined){
+        import('be-active/be-active.js').catch(err => {
+            import('https://esm.run/be-active@0.0.17/be-active.js');
+        });
+    }
+</script>
+
