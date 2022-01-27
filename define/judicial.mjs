@@ -8,9 +8,9 @@ const beDefinitiveProps = {
 };
 const visualHints = {
     propPresentationMap: {
-        supremeCourt: {
-            tagName: 'cotus-supreme-court',
-            ssrPath: './cotus-supreme-court.html',
+        scotus: {
+            tagName: 'cotus-scotus',
+            ssrPath: './cotus-scotus.html',
         }
     }
 };

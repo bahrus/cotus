@@ -13,9 +13,9 @@ const beDefinitiveProps: def<JudicialProps, JudicialActions> = {
 
 const visualHints: VisualHints<JudicialProps, JudicialActions> = {
     propPresentationMap: {
-        supremeCourt:{
-            tagName: 'cotus-supreme-court',
-            ssrPath: './cotus-supreme-court.html',
+        scotus:{
+            tagName: 'cotus-scotus',
+            ssrPath: './cotus-scotus.html',
         }
     }
 };

@@ -142,7 +142,7 @@ export interface CabinetProps{
 }
 
 export interface JudicialProps{
-    supremeCourt: SupremeCourtProps & SupremeCourtActions;
+    scotus: SupremeCourtProps & SupremeCourtActions;
 }
 
 
