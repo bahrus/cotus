@@ -3,7 +3,7 @@
     <!---->
     <template shadowroot="open">
         <template be-active>
-            <script data-version=0.0.6 id="be-importing/be-importing.js"></script>
+            <script data-version=0.0.7 id="be-importing/be-importing.js"></script>
             <script data-version=0.0.30 id="be-definitive/be-definitive.js" data-when=be-importing></script>
             
             <link rel="stylesheet" href="https://unpkg.com/open-props/colors.min.css">
@@ -34,9 +34,7 @@
         <td colspan=2>
             <fieldset>
                 <legend>POTUS</legend>
-                
-        <cotus-potus  style="min-height: 200px;min-width: 425px;display: flex"  be-importing='{"path":"./cotus-potus.html"}' be-observant='{"impeachmentCount":{"observeWinObj":"appHistory","on":"currentchange","vft":"current.getState|.union.congress.house.noOfPresidentialImpeachments","translate":-4}}'  id=president   itemprop=president></cotus-potus>
-
+                <cotus-potus  style="min-height: 200px;min-width: 425px;display: flex"  be-importing='{"path":"./cotus-potus.html"}' be-observant='{"impeachmentCount":{"observeWinObj":"appHistory","on":"currentchange","vft":"current.getState|.union.congress.house.noOfPresidentialImpeachments","translate":-4}}'  id=president itemprop=president></cotus-potus>
             </fieldset>
         </td>
     
@@ -47,9 +45,7 @@
         <td colspan=2>
             <fieldset>
                 <legend>Vice President</legend>
-                
-        <cotus-vice-president   be-importing='{"path":"./cotus-vice-president.html"}'  id=vicePresident   itemprop=vicePresident></cotus-vice-president>
-
+                <cotus-vice-president   be-importing='{"path":"./cotus-vice-president.html"}'  id=vicePresident itemprop=vicePresident></cotus-vice-president>
             </fieldset>
         </td>
     

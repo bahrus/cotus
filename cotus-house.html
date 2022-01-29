@@ -1,9 +1,9 @@
 
-<cotus-house t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-house","propDefaults":{"noOfDemocrats":0,"noOfRepublicans":0,"noOfIndependents":0,"noOfMen":0,"noOfWomen":0,"noOfOther":0,"noOfPresidentialImpeachments":4,"inSession":false,"termNumber":117,"members":[]},"propInfo":{"inSession":{"notify":{"reflect":{"asAttr":true}}}},"actions":{"calculateBreakdowns":{"ifAllOf":["members","calculateBreakdowns"]}}},"scriptPath":"./act/house.js","superclass":"House","scriptRef":"a_1643424482742"}'>
+<cotus-house t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-house","propDefaults":{"noOfDemocrats":0,"noOfRepublicans":0,"noOfIndependents":0,"noOfMen":0,"noOfWomen":0,"noOfOther":0,"noOfPresidentialImpeachments":4,"inSession":false,"termNumber":117,"members":[]},"propInfo":{"inSession":{"notify":{"reflect":{"asAttr":true}}}},"actions":{"calculateBreakdowns":{"ifAllOf":["members","calculateBreakdowns"]}}},"scriptPath":"./act/house.js","superclass":"House","scriptRef":"a_1643430287582"}'>
     <!---->
     <template shadowroot="open">
         <template be-active>
-            <script data-version=0.0.6 id="be-importing/be-importing.js"></script>
+            <script data-version=0.0.7 id="be-importing/be-importing.js"></script>
             <script data-version=0.0.30 id="be-definitive/be-definitive.js" data-when=be-importing></script>
 <script data-version=0.0.8 data-when=be-importing id="be-exportable/be-exportable.js"></script>
             <script data-when=be-importing id="be-reformable@0.0.27/be-reformable.js"></script>
@@ -186,9 +186,7 @@
         <td colspan=2>
             <fieldset>
                 <legend>Members</legend>
-                
-        <xtal-editor   be-importing='{"path":"xtal-editor@0.0.126/xtal-editor.html"}' be-observant='{"value":".members","key":["members"]}'  id=members   itemprop=members></xtal-editor>
-
+                <xtal-editor   be-importing='{"path":"xtal-editor@0.0.126/xtal-editor.html"}' be-observant='{"value":".members","key":["members"]}'  id=members itemprop=members></xtal-editor>
             </fieldset>
         </td>
     
@@ -204,7 +202,7 @@
 
     </template>
 </cotus-house>
-<script id=a_1643424482742 nomodule be-exportable src="./act/house.js"></script>
+<script id=a_1643430287582 nomodule be-exportable src="./act/house.js"></script>
 <script type=module>
     if(customElements.get('be-active') === undefined){
         import('be-active/be-active.js').catch(err => {

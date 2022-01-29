@@ -1,9 +1,9 @@
 
-<cotus-congress t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-congress","propDefaults":{"inSession":false},"actions":{}},"scriptPath":"./act/congress.js","superclass":"Congress","scriptRef":"a_1643424482712"}'>
+<cotus-congress t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-congress","propDefaults":{"inSession":false},"actions":{}},"scriptPath":"./act/congress.js","superclass":"Congress","scriptRef":"a_1643430287623"}'>
     <!---->
     <template shadowroot="open">
         <template be-active>
-            <script data-version=0.0.6 id="be-importing/be-importing.js"></script>
+            <script data-version=0.0.7 id="be-importing/be-importing.js"></script>
             <script data-version=0.0.30 id="be-definitive/be-definitive.js" data-when=be-importing></script>
 <script data-version=0.0.8 data-when=be-importing id="be-exportable/be-exportable.js"></script>
             <script data-when=be-importing id="be-consensual@0.0.11/be-consensual.js"></script>
@@ -37,9 +37,7 @@
         <td colspan=2>
             <fieldset>
                 <legend>House of Representatives</legend>
-                
-        <cotus-house  style="min-height: 280px;min-width: 425px;display: flex"  be-importing='{"path":"./cotus-house.html"}' be-transactional='{"noOfPresidentialImpeachments":"union.congress.house.noOfPresidentialImpeachments"}' be-consensual-member='true'  id=house   itemprop=house></cotus-house>
-
+                <cotus-house  style="min-height: 280px;min-width: 425px;display: flex"  be-importing='{"path":"./cotus-house.html"}' be-transactional='{"noOfPresidentialImpeachments":"union.congress.house.noOfPresidentialImpeachments"}' be-consensual-member='true'  id=house itemprop=house></cotus-house>
             </fieldset>
         </td>
     
@@ -50,9 +48,7 @@
         <td colspan=2>
             <fieldset>
                 <legend>Senate</legend>
-                
-        <cotus-senate  style="min-height: 250px;min-width: 425px;display: flex"  be-importing='{"path":"./cotus-senate.html"}' be-consensual-member='true'  id=senate   itemprop=senate></cotus-senate>
-
+                <cotus-senate  style="min-height: 250px;min-width: 425px;display: flex"  be-importing='{"path":"./cotus-senate.html"}' be-consensual-member='true'  id=senate itemprop=senate></cotus-senate>
             </fieldset>
         </td>
     
@@ -94,7 +90,7 @@
 
     </template>
 </cotus-congress>
-<script id=a_1643424482712 nomodule be-exportable src="./act/congress.js"></script>
+<script id=a_1643430287623 nomodule be-exportable src="./act/congress.js"></script>
 <script type=module>
     if(customElements.get('be-active') === undefined){
         import('be-active/be-active.js').catch(err => {
