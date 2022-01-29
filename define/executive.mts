@@ -16,13 +16,15 @@ const visualHints: VisualHints<ExecutiveProps> = {
         president: {
             name: 'POTUS',
             tagName: 'cotus-potus',
-            ssrPath: './cotus-potus.html',
             style: {
                 minHeight: '200px',
                 minWidth: '425px',
                 display: 'flex',
             },
             mayItBe: {
+                beImporting: {
+                    path: './cotus-potus.html'
+                },
                 beObservant: {
                     impeachmentCount: {
                         observeWinObj: 'appHistory',
@@ -36,7 +38,11 @@ const visualHints: VisualHints<ExecutiveProps> = {
         vicePresident: {
             name: 'Vice President',
             tagName: 'cotus-vice-president',
-            ssrPath: './cotus-vice-president.html',
+            mayItBe:{
+                beImporting: {
+                    path: './cotus-vice-president.html'
+                },
+            }
         }
     },
     fieldSets: {

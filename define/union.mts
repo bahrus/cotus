@@ -16,7 +16,11 @@ const visualHints: VisualHints<UnionProps, UnionActions> = {
         congress: {
             name: 'Congress',
             tagName: 'cotus-congress',
-            ssrPath: './cotus-congress.html',
+            mayItBe: {
+                beImporting: {
+                    path: './cotus-congress.html'
+                }
+            },
             style: {
                 minHeight: '700px',
                 minWidth: '550px',
@@ -26,7 +30,11 @@ const visualHints: VisualHints<UnionProps, UnionActions> = {
         executive: {
             name: 'Executive',
             tagName: 'cotus-executive',
-            ssrPath: './cotus-executive.html',
+            mayItBe: {
+                beImporting: {
+                    path: './cotus-executive.html'
+                }
+            },
             style: {
                 minHeight: '400px',
                 minWidth: '550px',
@@ -36,7 +44,11 @@ const visualHints: VisualHints<UnionProps, UnionActions> = {
         judicial: {
             name: 'Judicial',
             tagName: 'cotus-judicial',
-            ssrPath: './cotus-judicial.html',
+            mayItBe: {
+                beImporting: {
+                    path: './cotus-judicial.html'
+                }
+            },
             style: {
                 minHeight: '400px',
                 minWidth: '550px',

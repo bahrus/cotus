@@ -1,5 +1,5 @@
 
-<cotus-congress t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-congress","propDefaults":{"inSession":false},"actions":{}},"scriptPath":"./act/congress.js","superclass":"Congress","scriptRef":"a_1643373774007"}'>
+<cotus-congress t-a-i-l-b be-definitive='{"config":{"tagName":"cotus-congress","propDefaults":{"inSession":false},"actions":{}},"scriptPath":"./act/congress.js","superclass":"Congress","scriptRef":"a_1643424482712"}'>
     <!---->
     <template shadowroot="open">
         <template be-active>
@@ -38,7 +38,7 @@
             <fieldset>
                 <legend>House of Representatives</legend>
                 
-        <cotus-house  style="min-height: 280px;min-width: 425px;display: flex"  be-transactional='{"noOfPresidentialImpeachments":"union.congress.house.noOfPresidentialImpeachments"}' be-consensual-member='true'  id=house  be-importing=./cotus-house.html itemprop=house></cotus-house>
+        <cotus-house  style="min-height: 280px;min-width: 425px;display: flex"  be-importing='{"path":"./cotus-house.html"}' be-transactional='{"noOfPresidentialImpeachments":"union.congress.house.noOfPresidentialImpeachments"}' be-consensual-member='true'  id=house   itemprop=house></cotus-house>
 
             </fieldset>
         </td>
@@ -51,7 +51,7 @@
             <fieldset>
                 <legend>Senate</legend>
                 
-        <cotus-senate  style="min-height: 250px;min-width: 425px;display: flex"  be-consensual-member='true'  id=senate  be-importing=./cotus-senate.html itemprop=senate></cotus-senate>
+        <cotus-senate  style="min-height: 250px;min-width: 425px;display: flex"  be-importing='{"path":"./cotus-senate.html"}' be-consensual-member='true'  id=senate   itemprop=senate></cotus-senate>
 
             </fieldset>
         </td>
@@ -94,7 +94,7 @@
 
     </template>
 </cotus-congress>
-<script id=a_1643373774007 nomodule be-exportable src="./act/congress.js"></script>
+<script id=a_1643424482712 nomodule be-exportable src="./act/congress.js"></script>
 <script type=module>
     if(customElements.get('be-active') === undefined){
         import('be-active/be-active.js').catch(err => {

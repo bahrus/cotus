@@ -21,13 +21,15 @@ const visualHints = {
         house: {
             name: 'House of Representatives',
             tagName: 'cotus-house',
-            ssrPath: './cotus-house.html',
             style: {
                 minHeight: '280px',
                 minWidth: '425px',
                 display: 'flex',
             },
             mayItBe: {
+                beImporting: {
+                    path: './cotus-house.html'
+                },
                 beTransactional: {
                     noOfPresidentialImpeachments: 'union.congress.house.noOfPresidentialImpeachments',
                 },
@@ -37,13 +39,15 @@ const visualHints = {
         senate: {
             name: 'Senate',
             tagName: 'cotus-senate',
-            ssrPath: './cotus-senate.html',
             style: {
                 minHeight: '250px',
                 minWidth: '425px',
                 display: 'flex',
             },
             mayItBe: {
+                beImporting: {
+                    path: './cotus-senate.html'
+                },
                 beConsensualMember: true
             }
         },

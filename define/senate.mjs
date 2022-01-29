@@ -67,9 +67,11 @@ const visualHints = {
         },
         members: {
             tagName: 'xtal-editor',
-            ssrPath: 'xtal-editor@0.0.126/xtal-editor.html',
             name: 'Members',
             mayItBe: {
+                beImporting: {
+                    path: 'xtal-editor@0.0.126/xtal-editor.html'
+                },
                 beObservant: {
                     value: '.members',
                     key: ['members'],
