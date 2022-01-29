@@ -1,6 +1,6 @@
-label{
+label,th{
     color:var(--red-5);
 }
-legend{
+legend,td{
     color:var(--blue-5);
 }

@@ -30,7 +30,7 @@
     "build-union.html": "define/union.mjs"
   },
   "dependencies": {
-    "may-it-be": "0.0.114",
+    "may-it-be": "0.0.117",
     "be-consensual": "0.0.11",
     "be-transactional": "0.0.5"
   },

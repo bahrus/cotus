@@ -15,7 +15,6 @@
 		"define/vice-president.mts",
 		"define/executive.mts",
 		"define/judicial.mts",
-		"define/scotus.mts",
 		"define/union.mts",
 		"act/congress.ts",
 		"act/house.ts"
