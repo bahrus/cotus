@@ -9,11 +9,10 @@
     "build-senate.html": "node define/senate.mjs -html > cotus-senate.html",
     "build-house.html": "node define/house.mjs -html > cotus-house.html",
     "build-congress.html": "node define/congress.mjs -html > cotus-congress.html",
-    "build-potus.html": "node define/president.mjs -html > cotus-potus.html",
+    "build-potus.html": "node define/potus.mjs -html > cotus-potus.html",
     "build-vice-president.html": "node define/vice-president.mjs -html > cotus-vice-president.html",
     "build-executive.html": "node define/executive.mjs -html > cotus-executive.html",
     "build-judicial.html": "node define/judicial.mjs -html > cotus-judicial.html",
-    "build-scotus.html": "node define/scotus.mjs -html > cotus-scotus.html",
     "build-union.html": "node define/union.mjs -html > cotus-union.html",
     "watch": "npm-watch"
   },
@@ -28,7 +27,6 @@
     "build-vice-president.html": "define/vice-president.mjs",
     "build-executive.html": "define/executive.mjs",
     "build-judicial.html": "define/judicial.mjs",
-    "build-scotus.html": "define/scotus.mjs",
     "build-union.html": "define/union.mjs"
   },
   "dependencies": {

@@ -11,7 +11,7 @@
 		"define/senate.mts",
 		"define/house.mts",
 		"define/congress.mts",
-		"define/president.mts",
+		"define/potus.mts",
 		"define/vice-president.mts",
 		"define/executive.mts",
 		"define/judicial.mts",
