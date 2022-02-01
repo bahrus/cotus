@@ -18,7 +18,7 @@ const visualHints = {
                             {
                                 selector: 'a',
                                 attr: 'href',
-                                "prependVal": "https://www.supremecourt.gov/about/"
+                                "baseHref": "https://www.supremecourt.gov/about/"
                             }
                         ]
                     }

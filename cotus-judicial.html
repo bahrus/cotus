@@ -3,8 +3,8 @@
     <!---->
     <template shadowroot="open">
         <template be-active>
-            <script data-version=0.0.13 id="be-importing/be-importing.js"></script>
-            <script data-version=0.0.30 id="be-definitive/be-definitive.js" data-when=be-importing></script>
+            <script data-version=0.0.14 id="be-importing/be-importing.js"></script>
+            <script data-version=0.0.31 id="be-definitive/be-definitive.js" data-when=be-importing></script>
             
             <link rel="stylesheet" href="https://unpkg.com/open-props/colors.min.css">
         </template>
@@ -25,7 +25,7 @@
         <td colspan=2>
             <fieldset>
                 <legend>Scotus</legend>
-                <cotus-scotus   be-importing='{"path":"https://corslet.bahrus.workers.dev/?href=https%3A%2F%2Fwww.supremecourt.gov%2Fabout%2Fmembers_text.aspx&lhs=%3Cdiv+id%3D%22pagemaindiv%22+class%3D%22col-md-9%22%3E&rhs=%3Cscript&exclude_rhs=on&ts=2022-01-28T12%3A15%3A02.943Z&wrapper=%3Ccotus-scotus%3E%3Ctemplate+shadowroot%3Dopen%3E%7C%3C%2Ftemplate%3E%3C%2Fcotus-scotus%3E","beBased":{"rules":[{"selector":"a","attr":"href","prependVal":"https://www.supremecourt.gov/about/"}]}}'  id=scotus itemprop=scotus>
+                <cotus-scotus   be-importing='{"path":"https://corslet.bahrus.workers.dev/?href=https%3A%2F%2Fwww.supremecourt.gov%2Fabout%2Fmembers_text.aspx&lhs=%3Cdiv+id%3D%22pagemaindiv%22+class%3D%22col-md-9%22%3E&rhs=%3Cscript&exclude_rhs=on&ts=2022-01-28T12%3A15%3A02.943Z&wrapper=%3Ccotus-scotus%3E%3Ctemplate+shadowroot%3Dopen%3E%7C%3C%2Ftemplate%3E%3C%2Fcotus-scotus%3E","beBased":{"rules":[{"selector":"a","attr":"href","baseHref":"https://www.supremecourt.gov/about/"}]}}'  id=scotus itemprop=scotus>
 <template slot=header-sd>
     <style be-loaded='{"fallback":"/style/common.css","preloadRef":"/style/common.css"}'></style>
     
@@ -42,9 +42,9 @@
 
 </form>
 <template be-active>
-    <script data-version=0.0.43 id=be-loaded/be-loaded.js data-when=be-importing ></script>
-    <script data-version=0.0.88 id=be-observant/be-observant.js data-when=be-loaded ></script>
-    <script data-version=0.0.47 id=be-noticed/be-noticed.js data-when=be-observant ></script>
+    <script data-version=0.0.44 id=be-loaded/be-loaded.js data-when=be-importing ></script>
+    <script data-version=0.0.89 id=be-observant/be-observant.js data-when=be-loaded ></script>
+    <script data-version=0.0.48 id=be-noticed/be-noticed.js data-when=be-observant ></script>
 </template>
 <be-hive></be-hive>
 
@@ -54,7 +54,7 @@
 <script type=module>
     if(customElements.get('be-active') === undefined){
         import('be-active/be-active.js').catch(err => {
-            import('https://esm.run/be-active@0.0.17/be-active.js');
+            import('https://esm.run/be-active@0.0.18/be-active.js');
         });
     }
 </script>
